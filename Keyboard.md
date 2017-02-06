@@ -1,6 +1,6 @@
 
 在React-native 的Component组件中有个Keyboard.
-github地址如下：[地址：](https://github.com/facebook/react-native/blob/770091f3c13f7c1bd77c50f979d89a774001fbf0/Libraries/Components/Keyboard/Keyboard.js)
+github地址如下：[go](https://github.com/facebook/react-native/blob/770091f3c13f7c1bd77c50f979d89a774001fbf0/Libraries/Components/Keyboard/Keyboard.js)
 
 
 官方提供的例子，监听键盘的弹出与消失。Demo如下：
@@ -63,6 +63,7 @@ Android 对keyboardWillShow 监听不到。
   }
 ```
 
+
 我们如果需要使用时，可以如下：
 ```
 const dismissKeyboard = require('dismissKeyboard’);
@@ -70,8 +71,8 @@ dismissKeyboard();
 ```
 
 
+Keyboard中bug截图：
 
-
-
+![keyboard-bug](/Keyboard-Bug.png")
 
 
