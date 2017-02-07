@@ -22,5 +22,39 @@ React-Native使用JavaScript语言开发，使用React框架，对于web前端开发人员来说，是不
 毕竟React-Native还在发展，RN的出现确实能解决一部分问题，下面投入RN的研发热潮中。
 
 
+## 安卓开发环境
+
+1.安装  chocolatey.0.10.3   http://www.tuicool.com/articles/QV7VNrR 在cmd命令行下运行网址中的相关命令就可以安装chocolatey
+
+2.切换目录到  chocolatey.0.10.3 解压路径
+
+  管理员 powershell修改权限，使用： set-ExecutionPolicy RemoteSigned
+
+3.Node python
+
+        choco install python2
+		
+        choco install nodejs.install
+
+4.React Native命令行工具（react-native-cli）
+
+        npm install -g react-native-cli
+
+5.安装  安卓开发工具
+
+        记住  安卓sdk路径
+		
+        配置  ANDROID_HOME         D:\Android\sdk
+        
+6.安装 jdk
+        记住  路径
+		
+       配置      JAVA_HOME               D:\Java\jdk1.8.0_111
+	   
+                    Path                            %JAVA_HOME%\bin                   （win10不用加分号，win7加分号）
+					
+                                                        %JAVA_HOME%\jre\bin   
+														
+                （ps：配置好后  cmd窗口输入java测试）
 
 
