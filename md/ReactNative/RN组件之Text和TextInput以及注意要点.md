@@ -128,19 +128,19 @@ text:{
 
 属性：
 
-- autoCapitalize enum('none', 'sentences', 'words', 'characters') 
+autoCapitalize enum('none', 'sentences', 'words', 'characters') 
 
-- 控制TextInput是否要自动将特定字符切换为大写：
+控制TextInput是否要自动将特定字符切换为大写：
 
-characters: 所有的字符。
+- characters: 所有的字符。
 
-words: 每个单词的第一个字符。
+- words: 每个单词的第一个字符。
 
-sentences: 每句话的第一个字符（默认）。
+- sentences: 每句话的第一个字符（默认）。
 
-none: 不自动切换任何字符为大写。
+- none: 不自动切换任何字符为大写。
 
-- autoCorrect bool 
+autoCorrect bool 
 如果为false，会关闭拼写自动修正。默认值是true。
 
 autoFocus bool 
@@ -156,10 +156,12 @@ editable bool
 如果为false，文本框是不可编辑的。默认值为true。
 
 keyboardType enum("default", 'numeric', 'email-address', "ascii-capable", 'numbers-and-punctuation', 'url', 'number-pad', 'phone-pad', 'name-phone-pad', 'decimal-pad', 'twitter', 'web-search') 
-决定弹出的何种软键盘的，譬如numeric（纯数字键盘）。这些值在所有平台都可用：
-default
-numeric
-email-address
+决定弹出的何种软键盘的，譬如numeric（纯数字键盘）。
+
+这些值在所有平台都可用：
+- default
+- numeric
+- email-address
 
 maxLength number 
 限制文本框中最多的字符数。使用这个属性而不用JS逻辑去实现，可以避免闪烁的现象。
@@ -230,13 +232,13 @@ ios   onKeyPress function
 ios    returnKeyType enum('default', 'go', 'google', 'join', 'next', 'route', 'search', 'send', 'yahoo', 'done', 'emergency-call')
 决定“确定”按钮显示的内容。
 
-ios    selectionState DocumentSelectionState 
+- ios    selectionState DocumentSelectionState 
 参见DocumentSelectionState.js，可以控制一个文档中哪段文字被选中的状态。
 
-android  numberOfLines number 
+- android  numberOfLines number 
 设置输入框的行数。当multiline设置为true时使用它，可以占据对应的行数。
 
-android  underlineColorAndroid string 
+- android  underlineColorAndroid string 
 文本框的下划线颜色(译注：如果要去掉文本框的边框，请将此属性设为透明transparent)。
 
 
