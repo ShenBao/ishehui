@@ -128,9 +128,9 @@ text:{
 
 属性：
 
-autoCapitalize enum('none', 'sentences', 'words', 'characters') 
+- autoCapitalize enum('none', 'sentences', 'words', 'characters') 
 
-控制TextInput是否要自动将特定字符切换为大写：
+- 控制TextInput是否要自动将特定字符切换为大写：
 
 characters: 所有的字符。
 
@@ -140,7 +140,7 @@ sentences: 每句话的第一个字符（默认）。
 
 none: 不自动切换任何字符为大写。
 
-autoCorrect bool 
+- autoCorrect bool 
 如果为false，会关闭拼写自动修正。默认值是true。
 
 autoFocus bool 
