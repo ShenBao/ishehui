@@ -110,11 +110,9 @@ text:{
 
 2、在Android平台上，Text组件里使用paddingLeft 属性，不好使，直接顶着View了。
 
-      解决方式：1）将paddingLeft放在View属性上
-	  
-			   2）将paddingLeft修改为marginLeft
-						
-      建议使用第一种方案修改，把对齐方式交给view去处理，Text只负责文本属性的显示。
+	解决方式：1）将paddingLeft放在View属性上
+				2）将paddingLeft修改为marginLeft
+	建议使用第一种方案修改，把对齐方式交给view去处理，Text只负责文本属性的显示。
 
 
 
