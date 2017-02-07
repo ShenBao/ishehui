@@ -73,6 +73,6 @@ dismissKeyboard();
 
 Keyboard中bug截图：
 
-![keyboard-bug](Keyboard-Bug.png)
+![keyboard-bug](../../img/RN/Keyboard-Bug.png)
 
 
