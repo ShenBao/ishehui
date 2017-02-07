@@ -232,13 +232,13 @@ ios   onKeyPress function
 ios    returnKeyType enum('default', 'go', 'google', 'join', 'next', 'route', 'search', 'send', 'yahoo', 'done', 'emergency-call')
 决定“确定”按钮显示的内容。
 
-- ios    selectionState DocumentSelectionState 
+ios    selectionState DocumentSelectionState 
 参见DocumentSelectionState.js，可以控制一个文档中哪段文字被选中的状态。
 
-- android  numberOfLines number 
+android  numberOfLines number 
 设置输入框的行数。当multiline设置为true时使用它，可以占据对应的行数。
 
-- android  underlineColorAndroid string 
+android  underlineColorAndroid string 
 文本框的下划线颜色(译注：如果要去掉文本框的边框，请将此属性设为透明transparent)。
 
 
