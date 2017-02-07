@@ -71,6 +71,7 @@ AppRegistry.registerComponent('DimensionsDemo', () => DimensionsDemo);
 ```
 
 运行截图如下:
+
 ![Dimensions.jpg](../../img/RN/Dimensions.jpg)
 
 
