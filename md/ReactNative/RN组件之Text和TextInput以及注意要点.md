@@ -240,7 +240,12 @@ android  underlineColorAndroid string
 文本框的下划线颜色(译注：如果要去掉文本框的边框，请将此属性设为透明transparent)。
 
 
+### 注意点：
+1、在使用TextInput的过程中，在Android平台下，输入框下有个横线，此时需要将属性underlineColorAndroid  设置为transparent来解决。
 
+2、常用的TextInput是作为文本域，譬如最多输入50个字符。
+
+此时需要设置   multiline ={true}  maxLength ={50}
 
 
 
