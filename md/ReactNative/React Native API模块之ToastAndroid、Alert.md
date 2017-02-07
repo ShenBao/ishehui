@@ -19,7 +19,7 @@
 
 (ËÄ)Ê¹ÓÃÊµÀý
 
-ÉÏÏÂ½²½âÁËToastAndroidÄ£¿éµÄÊôÐÔºÍ½éÉÜ£¬ÏÂÃæÀ´ÑÝÊ¾Ò»ÏÂÊµÀýÐ§¹û¡£¾ßÌå´úÂëÈçÏÂ:
+ToastAndroid¾ßÌå´úÂëÈçÏÂ:
 
 ```
 'use strict';
@@ -108,7 +108,7 @@ static alert(title:string,message?:string,buttons?:Buttons,type?:AlertType)  ¸Ã»
 
 (Îå)AlertÊ¹ÓÃÊµÀý
 
-ÉÏÃæÒÑ¾­½²½âÁËAlertÄ£¿éµÄ»ù±¾½éÉÜ£¬ÏÖÔÚÀ´ÑÝÊ¾Ò»ÏÂ¸ÃÄ£¿éµÄ¾ßÌåÊ¹ÓÃ£¬ÊµÀý´úÂëÈçÏÂ:
+AlertÊµÀý´úÂëÈçÏÂ:
 
 ```
 'use strict';
@@ -193,3 +193,4 @@ AppRegistry.registerComponent('AlertDemo', () => AlertDemo);
 
 
 
+[È«ÎÄÍê]
