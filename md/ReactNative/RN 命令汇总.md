@@ -27,8 +27,6 @@ react-native --version
 npm info react-native
 ```
 
-npm install --save react-native@0.18
-
 ## 运行安卓
 ```
 react-native run-android
@@ -71,12 +69,14 @@ react-native upgrade
 android\gradle\wrapper    目录下
 ```
 	gradle-wrapper.properties   文件
+	
 	改最后一行  distributionUrl=https\://services.gradle.org/distributions/gradle-2.14.1-all.zip
 ```
 
 android 目录下
 ```
 	build.gradle    文件 
+	
 	改第8行   classpath 'com.android.tools.build:gradle:1.5.0'
 ```
 
