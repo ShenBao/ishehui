@@ -18,7 +18,7 @@ Node与浏览器环境的差异、nvm、CommonJS规范、require/export等语句
 
 3.react.js基础     
 - ES6基础    
-webpack/babel基础配置、箭头函数、class继承、模块导入导出、解构、const与let声明、promise、默认参数、展开运算符(...obj)、Map/Set     
+webpack/babel基础配置、箭头函数、字符模板、class继承、模块导入导出、解构、const与let声明、promise、默认参数、展开运算符(...obj)、Map/Set、 
 - react.js基础实践    
 vmdom基础概念、jsx语法与注意事项、component生命周期与适用场景、事件代理、强制设置innerHTML、不可控组件问题（input）、ref的使用、state与props、ajax/fetch、组件嵌套与复用、尝试编写交互式界面如tabbar  
 
