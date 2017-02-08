@@ -48,6 +48,17 @@
 
 
 
+## 常用库：
+
+redux:npm install --save redux
+
+redux绑定库:npm install --save React-redux
+
+开发者工具:npm install --save-dev redux-devtools
+
+异步action构造器:npm install --save redux-thunk
+
+tab切换：npm install react-native-tab-navigator --save
 
 
 
