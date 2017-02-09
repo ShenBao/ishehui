@@ -1,0 +1,67 @@
+{
+    "name": "ISH",
+    "version": "0.0.1",
+    "description": "",
+    "keywords": [
+        ""
+    ],
+    "homepage": "http://JSLite.io",
+    "author": "shenbao <shenbaoone@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "licenses": "MIT",
+    "idoc": {
+        "theme": "default",
+        "md": [
+            "首页.md",
+            {
+                "JS": [
+                    "快速搞定常用的ES6新特性.md"
+                ]
+            },
+            {
+                "React": [
+                    "React API 汇总.md",
+                    "React中ES6与ES5构建差别及JSX的使用.md",
+                    "React基础知识.md",
+                    "React编码规范.md",
+                    "webpack搭配react入门及实践.md"
+                ]
+            },
+            {
+                "RN 基础": [
+                    "ReactNative学习提纲.md",
+                    "ReactNative 命令汇总.md",
+                    "初探React-Native.md",
+                    "React-Native样式表指南.md",
+                    "ReactNative 布局之FlexBox.md"
+                ]
+            },
+            {
+                "RN API": [
+                    "React Native API模块（一）Dimensions、StyleSheet、ToastAndroid、Alert.md",
+                    "React Native API模块（二）Keyboard.md"
+                ]
+            },
+            {
+                "RN 组件": [
+                    "RN组件之Text和TextInput以及注意要点.md"
+                ]
+            },
+            {
+                "RN 工具": [
+                    "基于Fetch封装HTTPUtil工具类.md"
+                ]
+            },
+            {
+                "开发": [
+                    "RN版  bug反馈列表(rn 0.35).md",
+                    "RN版  项目重构(基于RN 0.41.2).md"
+                ]
+            },
+            "关于.md"
+        ]
+    }
+}

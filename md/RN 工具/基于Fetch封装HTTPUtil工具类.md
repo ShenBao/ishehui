@@ -1,17 +1,17 @@
+ï»¿
+#  åŸºäºŽFetchå°è£…HTTPUtilå·¥å…·ç±»
 
-#  »ùÓÚFetch·â×°HTTPUtil¹¤¾ßÀà
+å…³äºŽhttpè¯·æ±‚çš„å·¥å…·ç±»ï¼Œæœ‰å¾ˆå¤šï¼Œè­¬å¦‚ï¼šhttpclientï¼Œokhttpï¼ŒAFNetworking ã€‚
 
-¹ØÓÚhttpÇëÇóµÄ¹¤¾ßÀà£¬ÓÐºÜ¶à£¬Æ©Èç£ºhttpclient£¬okhttp£¬AFNetworking ¡£
+é‚£ä¹ˆå…³äºŽRNçš„å¤„ç†HTTPè¯·æ±‚çš„å·¥å…·ç±»å‘¢ï¼Œç›®å‰è¿˜æ²¡æœ‰æ‰¾åˆ°ï¼Œæ‰€ä»¥è‡ªå·±ç®€å•å°è£…äº†ä¸€ä¸ªï¼Œé¿å…ä»£ç é‡Œåˆ°å¤„éƒ½æ˜¯fetchæ–¹æ³•ã€‚
 
-ÄÇÃ´¹ØÓÚRNµÄ´¦ÀíHTTPÇëÇóµÄ¹¤¾ßÀàÄØ£¬Ä¿Ç°»¹Ã»ÓÐÕÒµ½£¬ËùÒÔ×Ô¼º¼òµ¥·â×°ÁËÒ»¸ö£¬±ÜÃâ´úÂëÀïµ½´¦¶¼ÊÇfetch·½·¨¡£
-
-ºÃÁË£¬ÍêÕû´úÂëÈçÏÂ£º
+å¥½äº†ï¼Œå®Œæ•´ä»£ç å¦‚ä¸‹ï¼š
 
 ```
 var HTTPUtil = {};
 
 /**
- * »ùÓÚ fetch ·â×°µÄ GETÇëÇó
+ * åŸºäºŽ fetch å°è£…çš„ GETè¯·æ±‚
  * @param url
  * @param params {}
  * @param headers
@@ -51,7 +51,7 @@ HTTPUtil.get = function(url, params, headers) {
 
 
 /**
- * »ùÓÚ fetch ·â×°µÄ POSTÇëÇó  FormData ±íµ¥Êý¾Ý
+ * åŸºäºŽ fetch å°è£…çš„ POSTè¯·æ±‚  FormData è¡¨å•æ•°æ®
  * @param url
  * @param formData  
  * @param headers
@@ -84,21 +84,21 @@ export default HTTPUtil;
 
 ```
 
-ÔõÃ´Ê¹ÓÃÄØ£¬¾Ù¸ö¼òµ¥µÄÀý×Ó°É£º
+æ€Žä¹ˆä½¿ç”¨å‘¢ï¼Œä¸¾ä¸ªç®€å•çš„ä¾‹å­å§ï¼š
 ```
 let formData = new FormData();
 formData.append("id",1060);
       
 HTTPUtil.post(url,formData,headers).then((json) => {
-	//´¦Àí ÇëÇósuccess
+	//å¤„ç† è¯·æ±‚success
    	if(json.code === 0 ){
-            //ÎÒÃÇ¼ÙÉèÒµÎñ¶¨ÒåcodeÎª0Ê±£¬Êý¾ÝÕý³£
+            //æˆ‘ä»¬å‡è®¾ä¸šåŠ¡å®šä¹‰codeä¸º0æ—¶ï¼Œæ•°æ®æ­£å¸¸
         }else{
-             //´¦Àí×Ô¶¨ÒåÒì³£
+             //å¤„ç†è‡ªå®šä¹‰å¼‚å¸¸
             this.doException(json);
         }
    },(json)=>{
-     //TODO ´¦ÀíÇëÇófail
+     //TODO å¤„ç†è¯·æ±‚fail
       
 })
 ```
@@ -116,4 +116,4 @@ HTTPUtil.post(url,formData,headers).then((json) => {
 
 
 
-[È«ÎÄÍê]
+[å…¨æ–‡å®Œ]

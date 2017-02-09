@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ishehui</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                ishehui
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>JS</a><ul><li><a href="../../html/JS/快速搞定常用的ES6新特性.html">快速搞定常用的ES6新特性</a></li></ul></li><li><a href="#"><span></span>React</a><ul><li><a href="../../html/React/React API 汇总.html">React API 汇总</a></li><li><a href="../../html/React/React中ES6与ES5构建差别及JSX的使用.html">React中ES6与ES5构建差别及JSX的使用</a></li><li><a href="../../html/React/React基础知识.html">React基础知识</a></li><li><a href="../../html/React/React编码规范.html">React编码规范</a></li><li><a href="../../html/React/webpack搭配react入门及实践.html">webpack搭配react入门及实践</a></li></ul></li><li><a href="#"><span></span>RN 基础</a><ul><li><a href="../../html/RN 基础/React-Native样式表指南.html">React-Native样式表指南</a></li></ul></li><li><a href="#"><span></span>RN API</a><ul><li><a href="../../html/RN API/React Native API模块（一）Dimensions、StyleSheet、ToastAndroid、Alert.html">React Native API模块（一）Dimensions、StyleSheet、ToastAndroid、Alert</a></li><li><a href="../../html/RN API/React Native API模块（二）Keyboard.html">React Native API模块（二）Keyboard</a></li><li><a href="../../html/RN API/ReactNative学习提纲.html">ReactNative学习提纲</a></li><li><a href="../../html/RN API/RN 命令汇总.html">RN 命令汇总</a></li><li><a href="../../html/RN API/RN布局之FlexBox.html">RN布局之FlexBox</a></li><li><a href="../../html/RN API/RN组件之Text和TextInput以及注意要点.html">RN组件之Text和TextInput以及注意要点</a></li><li class="active"><a href="../../html/RN API/初探React-Native.html">初探React-Native</a></li><li><a href="../../html/RN API/基于Fetch封装HTTPUtil工具类.html">基于Fetch封装HTTPUtil工具类</a></li></ul></li><li><a href="#"><span></span>RN 组件</a><ul></ul></li><li><a href="#"><span></span>RN 工具</a><ul></ul></li><li><a href="#"><span></span>开发</a><ul><li><a href="../../html/开发/RN版  bug反馈列表(rn 0.35).html">RN版  bug反馈列表(rn 0.35)</a></li><li><a href="../../html/开发/RN版  项目重构(基于RN 0.41.2).html">RN版  项目重构(基于RN 0.41.2)</a></li></ul></li><li><a href="../../html/关于.html">关于</a></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0���������ã���ʵ�ܹǸС�">���������ã���ʵ�ܹǸС�</a></li><li><a href="#t1��׿��������">��׿��������</a></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <p>React Native &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;Facebook&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x13F;&#xFFFD;&#x534;&#xFFFD;&#xFFFD;&#xFFFD;&#x723;&#xFFFD;React Native &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5BC;&#xFFFD;&#xFFFD;,&#x467;&#x3F0;&#x4BB;&#xFFFD;&#xFFFD;,&#xFFFD;&#xFFFD;&#x427;&#xFFFD;&#xFFFD;&#x434;&#xFFFD;&#xFFFD;&#x1BD;&#x328;&#x52D;&#xFFFD;&#xFFFD;&#x4E6;&#xFFFD;&#xE1;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x1E1;&#xFFFD;Learn once&#xFFFD;&#xFFFD;write anywhere&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xF8EC;&#xFFFD;&#x1F2;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x631;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xC8EC;Java&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; write once,run anywhere&#xFFFD;&#xFFFD;java&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;JVM&#xFFFD;&#x423;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x2B5;&#xFFFD;&#x5BF;&#xFFFD;&#x1BD;&#x328;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x523;&#xFFFD;&#x23B;&#xFFFD;&#xFFFD;RN&#xFFFD;&#xFFFD;&#x2B2;&#xF4;&#xFFFD;&#xFFFD;write anywhere&#xFFFD;&#xFFFD;</p>
+<p>&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;API&#xFFFD;&#xFFFD;React&#xFFFD;&#xFFFD;Native&#xFFFD;&#x13A;&#xFFFD;&#xFFFD;&#x121;&#xFFFD;&#xFFFD;&#x1E69;&#x4BB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;Android&#xFFFD;&#xFFFD;iOS&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x2B9;&#xFFFD;&#xE3;&#xFFFD;&#xFFFD;&#x1F2;&#xFFFD;&#xFFFD;&#x1FA;&#xFFFD;&#x2EC;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x1F0;&#xFFFD;&#xFFFD;&#x4AA;2&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x434;&#xFFFD;&#x13D;&#xFFFD;&#xFFFD;&#x68EC;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x4BB;&#xFFFD;&#xFFFD;&#xFFFD;&#x2FE;&#x378;&#x3DA8;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x368;&#xFFFD;&#xF5;&#xFFFD;&#x123;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x537;&#xFFFD;&#x5F0;&#xFFFD;&#xFFFD;&#x4BB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;API&#xFFFD;&#xFFFD;React-Native&#xFFFD;&#x1E69;&#xFFFD;&#xFFFD;&#x4BB;&#x3F5;&#xFFFD;&#x439;&#xFFFD;&#xFFFD;&#x735;&#x13D;&#x4FF;&#x6B6;&#xFFFD;&#xFFFD;&#x58EC;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5BB;&#xFFFD;&#xFFFD;&#x4AA;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x53C;&#xFFFD;&#xFFFD;&#xFFFD;&#x138;&#xFFFD;&#x2BD;&#x225;&#xFFFD;&#xFFFD;&#xFFFD;&#xFC;&#xFFFD;&#xFFFD;&#x261;&#xFFFD;</p>
+<p>React-Native&#x2B9;&#xFFFD;&#xFFFD;JavaScript&#xFFFD;&#xFFFD;&#xFFFD;&#x53F;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x2B9;&#xFFFD;&#xFFFD;React&#xFFFD;&#xFFFD;&#xFFFD;&#x723;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;web&#x1F0;&#xFFFD;&#x2FF;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x531;&#xFFFD;&#xFFFD;&#x2F5;&#xFFFD;&#xFFFD;&#xFFFD;&#x1F2;&#xFFFD;&#xFFFD;&#x1FA;&#xFFFD;&#xFFFD;&#xFFFD;&#x3E4;&#xFFFD;&#xFFFD;&#x2B2;&#xF4;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;ReactJS &#xFFFD;&#xFFFD;&#xFFFD;&#x723;&#xFFFD;&#xFFFD;&#x37A;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5BF;&#xFFFD;&#xFFFD;&#xFFFD;&#x52D;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;App&#xFFFD;&#xFFFD;</p>
+<h3 id="t0&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xE3;&#xFFFD;&#xFFFD;&#xFFFD;&#x2B5;&#xFFFD;&#x739;&#x1F8;&#x421;&#xFFFD;">&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xE3;&#xFFFD;&#xFFFD;&#xFFFD;&#x2B5;&#xFFFD;&#x739;&#x1F8;&#x421;&#xFFFD; <a href="#t0&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xE3;&#xFFFD;&#xFFFD;&#xFFFD;&#x2B5;&#xFFFD;&#x739;&#x1F8;&#x421;&#xFFFD;"> # </a></h3>
+<p>&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;React-Native&#xFFFD;&#xFFFD;&#xFFFD;&#x674;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x28FA;</p>
+<p>1&#xFFFD;&#xFFFD;&#x5A7;&#xFFFD;&#x5B5;&#x139;&#xFFFD;&#xFFFD;&#x732;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x1A3;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x2B9;&#xFFFD;&#xFFFD;RN&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x4BB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;APP&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x6B3;&#xFFFD;&#x2BC;&#xFFFD;&#x5F6;&#x3A3;&#xFFFD;&#xFFFD;&#x6C7E;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x1B5;&#xFFFD;&#xFFFD;</p>
+<p>2&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x534;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x663;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x133;&#x429;&#xFFFD;&#xFFFD;&#xFFFD;&#x4F9;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5FF;&#xFFFD;&#xFFFD;&#x1E3;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFD;&#xFFFD;&#xFFFD;&#xFFFD;</p>
+<p>3&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x22B;&#x368;&#xFFFD;&#xE3;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x1F5;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x2D26;&#xFFFD;&#xFFFD;android&#xFFFD;&#xFFFD;iOS</p>
+<p>4&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x28EC;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;NativeAPP &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x432;&#xFFFD;&#xFFFD;&#x8EC;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x3FB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;Hybrid APP</p>
+<p>5&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x139;&#xFFFD;&#xFFFD;&#x723;&#xFFFD;&#xFFFD;&#xFFFD;&#x4AA;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x52D;&#xFFFD;&#xFFFD;&#xFFFD;&#x17D;&#x4F5;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x1F5;&#xFFFD;&#xFFFD;&#xFFFD;&#x4AA;&#xFFFD;&#x2FD;&#xFFFD;&#x52D;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;</p>
+<p>&#xFFFD;&#x3FE;&#xFFFD;React-Native&#xFFFD;&#xFFFD;&#xFFFD;&#x6B7;&#xFFFD;&#x579;&#xFFFD;&#xFFFD;RN&#xFFFD;&#x133;&#xFFFD;&#xFFFD;&#xFFFD;&#x237;&#x2B5;&#xFFFD;&#x73D;&#xFFFD;&#xFFFD;&#xFFFD;&#x4BB;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x28EC;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x376;&#xFFFD;&#xFFFD;RN&#xFFFD;&#xFFFD;&#xFFFD;&#x437;&#xFFFD;&#xFFFD;&#x233;&#xFFFD;&#xFFFD;&#x421;&#xFFFD;</p>
+<h2 id="t1&#xFFFD;&#xFFFD;&#x5FF;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;">&#xFFFD;&#xFFFD;&#x5FF;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; <a href="#t1&#xFFFD;&#xFFFD;&#x5FF;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;"> # </a></h2>
+<p>1.&#xFFFD;&#xFFFD;&#x5F0;  chocolatey.0.10.3   <a href="http://www.tuicool.com/articles/QV7VNrR">http://www.tuicool.com/articles/QV7VNrR</a> &#xFFFD;&#xFFFD;cmd&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x5B7;&#xFFFD;&#x435;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x37F;&#xFFFD;&#xFFFD;&#x530;&#xFFFD;&#x5F0;chocolatey</p>
+<p>2.&#xFFFD;&#x43B;&#xFFFD;&#x13F;&#xBC;&#xFFFD;&#xFFFD;  chocolatey.0.10.3 &#xFFFD;&#xFFFD;&#x479;&#xB7;&#xFFFD;&#xFFFD;</p>
+<p>  &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x531; powershell&#xFFFD;&#x7B8;&#xFFFD;&#x228;&#xFFFD;&#x7A3;&#xFFFD;&#x2B9;&#xFFFD;&#xE3;&#xFFFD; set-ExecutionPolicy RemoteSigned</p>
+<p>3.Node python</p>
+<pre><code>    choco install python2
+
+    choco install nodejs.install
+</code></pre><p>4.React Native&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#x439;&#xFFFD;&#xFFFD;&#x7E3;&#xFFFD;react-native-cli&#xFFFD;&#xFFFD;</p>
+<pre><code>    npm install -g react-native-cli
+</code></pre><p>5.&#xFFFD;&#xFFFD;&#x5F0;  &#xFFFD;&#xFFFD;&#x5FF;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;</p>
+<pre><code>    &#xFFFD;&#xFFFD;&#x5E1;  &#xFFFD;&#xFFFD;&#x5FF;sdk&#xB7;&#xFFFD;&#xFFFD;
+
+    &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;  ANDROID_HOME         D:\Android\sdk
+</code></pre><p>6.&#xFFFD;&#xFFFD;&#x5F0; jdk
+        &#xFFFD;&#xFFFD;&#x5E1;  &#xB7;&#xFFFD;&#xFFFD;</p>
+<pre><code>   &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;      JAVA_HOME               D:\Java\jdk1.8.0_111
+
+                Path                            %JAVA_HOME%\bin                   &#xFFFD;&#xFFFD;win10&#xFFFD;&#xFFFD;&#xFFFD;&#xFC;&#x4F7;&#x5BA;&#x163;&#xFFFD;win7&#xFFFD;&#x4F7;&#x5BA;&#x163;&#xFFFD;
+
+                                                    %JAVA_HOME%\jre\bin   
+
+            &#xFFFD;&#xFFFD;ps&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFA;&#xFA;&#xFFFD;  cmd&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;java&#xFFFD;&#xFFFD;&#xFFFD;&#x523;&#xFFFD;
+</code></pre><p>[&#x22B;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;]</p>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
