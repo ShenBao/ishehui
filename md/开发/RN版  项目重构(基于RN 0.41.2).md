@@ -16,7 +16,7 @@
 
 1.抛弃react-native-navigation，自己封装
 
-2.head公共部分自己封装
+2.head公共部分自己封装（支持左右的按钮）
 
 3.返回自己封装
 
