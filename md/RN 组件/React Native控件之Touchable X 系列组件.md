@@ -55,12 +55,18 @@ Touchable*系列组件的使用，该系列组件包括四种分别为:Touchable
 
 3.2.属性方法
 
-TouchableWithoutFeedback的 属性，这边TouchableHighlight组件全部可以进行使用
-activeOpacity  number 该用来设置视图在进行触摸的时候，要要显示的不透明度(通常在0-1之间)
-onHideUnderlay  function  方法 当底层被隐藏的时候调用
-onShowUnderlay  function 方法 当底层显示的时候调用
-style  可以设置控件的风格演示，该风格演示可以参考View组件的style
-underlayColor  当触摸或者点击控件的时候显示出的颜色
+- TouchableWithoutFeedback的 属性，这边TouchableHighlight组件全部可以进行使用
+
+- activeOpacity  number 该用来设置视图在进行触摸的时候，要要显示的不透明度(通常在0-1之间)
+
+- onHideUnderlay  function  方法 当底层被隐藏的时候调用
+
+- onShowUnderlay  function 方法 当底层显示的时候调用
+
+- style  可以设置控件的风格演示，该风格演示可以参考View组件的style
+
+- underlayColor  当触摸或者点击控件的时候显示出的颜色
+
 
 3.3.组件使用实例代码
 
@@ -116,8 +122,10 @@ AppRegistry.registerComponent('TouchableHighlightDemo', () => TouchableHighlight
 
 4.2.属性方法
 
-TouchableWithoutFeedback的 属性，这边TouchableOpacity组件全部可以进行使用
-activeOpacity  number  设置当用户触摸的时候，组件的透明度
+- TouchableWithoutFeedback的 属性，这边TouchableOpacity组件全部可以进行使用
+
+- activeOpacity  number  设置当用户触摸的时候，组件的透明度
+
 4.3.组件使用实例代码:
 
 ```
@@ -266,16 +274,18 @@ var TouchableDemo = React.createClass({
 5.2.属性方法介绍
 
 TouchableWithoutFeedback的 属性，这边TouchableNativeFeedback组件全部可以进行使用
+
 background  backgroundPropType  该用来设置背景资源的类型，该属性会传入一个type属性和依赖的额外资源的data的对象。官方推荐采用如下的静态方法来进行生成该dictionary对象
-①:TouchableNativeFeedback.SelectableBackground()   该会创建使用android默认主题背景(?android:attr/selectableItemBackground)
 
-②:TouchableNativeFeedback.SelectableBackgroundBorderless()  该会创建使用android默认的无框的主题背景(?android:attr/selectableItemBackgroundBorderless)。不过该参数需要Android API 21+才可以使用
+- ①:TouchableNativeFeedback.SelectableBackground()   该会创建使用android默认主题背景(?android:attr/selectableItemBackground)
 
-③:TouchableNativeFeedback.Ripple(color,borderless)  该会创建当组件被按下的时候有一个水滴的效果.通过color参数指定颜色，如果borderless为true的时候，那么该水滴效果会渲染到该组件视图的外边。同样该背景类型参数也需要Android API 21+才可以使用
+- ②:TouchableNativeFeedback.SelectableBackgroundBorderless()  该会创建使用android默认的无框的主题背景(?android:attr/selectableItemBackgroundBorderless)。不过该参数需要Android API 21+才可以使用
+
+- ③:TouchableNativeFeedback.Ripple(color,borderless)  该会创建当组件被按下的时候有一个水滴的效果.通过color参数指定颜色，如果borderless为true的时候，那么该水滴效果会渲染到该组件视图的外边。同样该背景类型参数也需要Android API 21+才可以使用
 
 5.3.使用实例代码:
 
-①:首先设置backgroundPropType为默认的背景效果代码:
+首先设置backgroundPropType为默认的背景效果代码:
 
 ```
 var TouchableDemo = React.createClass({
