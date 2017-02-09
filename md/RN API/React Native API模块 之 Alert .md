@@ -100,8 +100,7 @@ AppRegistry.registerComponent('AlertDemo', () => AlertDemo);
 
 运行截图如下:
 
-![Alert.gif](../../img/RN/Alert.gif)
-
+![Alert.gif](./img/RN/Alert.gif)
 
 
 

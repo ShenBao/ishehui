@@ -78,7 +78,7 @@ AppRegistry.registerComponent('ToastAndroidDemo', () => ToastAndroidDemo);
 
 运行截图如下:
 
-![ToastAndroid.gif](../../img/RN/ToastAndroid.gif)
+![ToastAndroid.gif](./img/RN/ToastAndroid.gif)
 
 
 

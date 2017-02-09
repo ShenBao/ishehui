@@ -35,7 +35,7 @@
 <div class="container">
 
     <div class="page-toc">
-        <ul><li><a href="#t0React Native API模块 之 StyleSheet">React Native API模块 之 StyleSheet</a><ul><li><a href="#t1StyleSheet">StyleSheet</a></li><li><a href="#t2ToastAndroid">ToastAndroid</a></li></ul></li></ul>
+        <ul><li><a href="#t0React Native API模块 之 StyleSheet">React Native API模块 之 StyleSheet</a><ul><li><a href="#t1StyleSheet">StyleSheet</a></li><li><a href="#t2重要提示  RN样式表指南">重要提示  RN样式表指南</a></li></ul></li></ul>
     </div>
     
     <div class="content markdown-body">
@@ -82,69 +82,10 @@
 }
 </code></pre><p>&#x8BE5;&#x4F1A;&#x6839;&#x636E;&#x5F53;&#x524D;&#x5E73;&#x53F0;&#x4FE1;&#x606F;&#xFF0C;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x6839;&#x5F88;&#x7EC6;&#x7684;&#x7EBF;&#x3002;</p>
 <p>2.flatten: CallExpression</p>
-<h2 id="t2ToastAndroid">ToastAndroid <a href="#t2ToastAndroid"> # </a></h2>
-<p>&#x6A21;&#x5757;:ToastAndroid&#x3002;android&#x5E73;&#x53F0;&#x7684;toast&#x6D88;&#x606F;&#x3002;</p>
-<p>&#x8BE5;ToastAndroid&#x6A21;&#x5757;&#x662F;&#x628A;Android&#x5E73;&#x53F0;&#x539F;&#x751F;&#x6A21;&#x5757;Toast&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;JS&#x6A21;&#x5757;&#x4F7F;&#x7528;&#xFF0C;&#x6765;&#x8FDB;&#x884C;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;toast&#x6D88;&#x606F;&#x3002;&#x8BE5;&#x6A21;&#x5757;&#x6709;&#x4E00;&#x4E2A;&apos;show&apos;&#x65B9;&#x6CD5;&#x4F1A;&#x4F20;&#x5165;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x53C2;&#x6570;:&#x2460;:message  string &#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#xFF0C;&#x8BBE;&#x7F6E;&#x8981;&#x8FDB;&#x884C;toast&#x663E;&#x793A;&#x7684;&#x6587;&#x672C;    &#x2461;:duration  int&#x683C;&#x5F0F; toast&#x6D88;&#x606F;&#x5F39;&#x51FA;&#x663E;&#x793A;&#x7684;&#x65F6;&#x957F;&#x3002;&#x6709;&#x4E24;&#x4E2A;&#x53EF;&#x9009;&#x503C;ToastAndroid.SHORT&#x6216;&#x8005;ToastAndroid.LONG</p>
-<p>(&#x4E8C;)&#x65B9;&#x6CD5;</p>
-<p>1.show(message:string,duration:number)  static &#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x8BBE;&#x7F6E;toast&#x6D88;&#x606F;&#x7684;&#x5F39;&#x51FA;</p>
-<p>(&#x4E09;)&#x5C5E;&#x6027;</p>
-<p>1.SHORT  &#x9759;&#x6001;int&#x503C;&#xFF0C;&#x8868;&#x793A;toast&#x663E;&#x793A;&#x8F83;&#x77ED;&#x7684;&#x65F6;&#x95F4;</p>
-<p>2.LONG   &#x9759;&#x6001;int&#x503C;&#xFF0C;&#x8868;&#x793A;otast&#x663E;&#x793A;&#x8F83;&#x957F;&#x7684;&#x65F6;&#x95F4;</p>
-<p>(&#x56DB;)&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;</p>
-<p>ToastAndroid&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
-<pre><code>&apos;use strict&apos;;
-import React, {
-  AppRegistry,
-  Component,
-  StyleSheet,
-  Text,
-  View,
-  ToastAndroid,
-  TouchableHighlight,
-} from &apos;react-native&apos;;
-class CustomButton extends React.Component {
-  render() {
-    return (
-      &lt;TouchableHighlight
-        style={styles.button}
-        underlayColor=&quot;#a5a5a5&quot;
-        onPress={this.props.onPress}&gt;
-        &lt;Text style={styles.buttonText}&gt;{this.props.text}&lt;/Text&gt;
-      &lt;/TouchableHighlight&gt;
-    );
-  }
-}
-class ToastAndroidDemo extends Component {
-  render() {
-    return (
-      &lt;View&gt;
-        &lt;Text style={styles.welcome}&gt;
-          &#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x77ED;&#x65F6;&#x95F4;&#x7684;toast
-        &lt;/Text&gt;
-        &lt;CustomButton text=&quot;&#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x77ED;&#x65F6;&#x95F4;toast&quot;
-        onPress={()=&gt;ToastAndroid.show(&apos;&#x70B9;&#x51FB;&#x6211;&#x597D;&#x75BC;,&#x77ED;&#x65F6;&#x95F4;&#x7684;~&apos;,ToastAndroid.SHORT)}/&gt;
-        &lt;Text style={styles.welcome}&gt;
-          &#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x957F;&#x65F6;&#x95F4;&#x7684;toast
-        &lt;/Text&gt;
-        &lt;CustomButton text=&quot;&#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x957F;&#x65F6;&#x95F4;toast&quot;
-        onPress={()=&gt;ToastAndroid.show(&apos;&#x70B9;&#x51FB;&#x6211;&#x597D;&#x75BC;,&#x957F;&#x65F6;&#x95F4;&#x7684;~&apos;,ToastAndroid.LONG)}/&gt;
-      &lt;/View&gt;
-    );
-  }
-}
-const styles = StyleSheet.create({
-  button: {
-    margin:5,
-    backgroundColor: &apos;white&apos;,
-    padding: 15,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: &apos;#cdcdcd&apos;,
-  }
-});
-
-AppRegistry.registerComponent(&apos;ToastAndroidDemo&apos;, () =&gt; ToastAndroidDemo);
-</code></pre><p>&#x8FD0;&#x884C;&#x622A;&#x56FE;&#x5982;&#x4E0B;:</p>
-<p><img src="../../../../img/RN/ToastAndroid.gif" alt="ToastAndroid.gif"></p>
+<h2 id="t2&#x91CD;&#x8981;&#x63D0;&#x793A;  RN&#x6837;&#x5F0F;&#x8868;&#x6307;&#x5357;">&#x91CD;&#x8981;&#x63D0;&#x793A;  RN&#x6837;&#x5F0F;&#x8868;&#x6307;&#x5357; <a href="#t2&#x91CD;&#x8981;&#x63D0;&#x793A;  RN&#x6837;&#x5F0F;&#x8868;&#x6307;&#x5357;"> # </a></h2>
+<ul>
+<li><a href="../RN &#x57FA;&#x7840;/React-Native&#x6837;&#x5F0F;&#x8868;&#x6307;&#x5357;.html">React-Native&#x6837;&#x5F0F;&#x8868;&#x6307;&#x5357;</a></li>
+</ul>
 <p>[&#x5168;&#x6587;&#x5B8C;]</p>
 
         <div class="copyright">Created by <a href="https://github.com/shenbao" target="_blank">ShenBao</a></div>

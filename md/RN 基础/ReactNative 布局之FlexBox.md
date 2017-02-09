@@ -5,7 +5,7 @@
 
 flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。采用flex布局的元素，称为flex容器（flex Container），简称"容器"。它的所有子元素自动成为容器成员，称为flex项目（flex item），简称"项目"。
 
-![flexbox01.jpg](../../img/RN/flexbox01.jpg)
+![flexbox01.jpg](./img/RN/flexbox01.jpg)
 
 ### flexDirection
 
@@ -16,7 +16,7 @@ flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提�
 |row           |横向布局，主轴为水平方向|
 |column     |纵向布局，主轴为竖直方向|
 
-![flexDirection.jpg](../../img/RN/flexbox-flexDirection.jpg)
+![flexDirection.jpg](./img/RN/flexbox-flexDirection.jpg)
 
 ### flexWrap
 
@@ -27,7 +27,7 @@ flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提�
 |nowrap  |项目沿主轴方向布局，超出容器长度的部分不可见                    |
 |wrap      |项目沿主轴布局所需长度大于容器总长度时，分行布局，所有项目内容都可见|
 
-![flexWrap.jpg](../../img/RN/flexbox-flexWrap.jpg)
+![flexWrap.jpg](./img/RN/flexbox-flexWrap.jpg)
 
 ### alignItems
 
@@ -39,7 +39,7 @@ flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提�
 |center     | 交叉轴居中 |
 |flex-end  | 交叉轴末端 |
 
-![alignItems.jpg](../../img/RN/flexbox-alignItems.jpg)
+![alignItems.jpg](./img/RN/flexbox-alignItems.jpg)
 
 ### justifyContent
 
@@ -53,7 +53,7 @@ flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提�
 |space-between| 项目与项目之间插入相等空隙 |
 |space-around | 项目两旁插入相等空隙      |
 
-![justifyContent.jpg](../../img/RN/flexbox-justifyContent.jpg)
+![justifyContent.jpg](./img/RN/flexbox-justifyContent.jpg)
 
 ### flex
 
@@ -97,7 +97,7 @@ flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提�
 |center      |居中|
 |flex-end   |末端|
 
-![alignSelf.jpg](../../img/RN/flexbox-alignSelf.jpg)
+![alignSelf.jpg](./img/RN/flexbox-alignSelf.jpg)
 
 
 
