@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISH</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                ISH
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>JS</a><ul><li><a href="../../html/JS/快速搞定常用的ES6新特性.html">快速搞定常用的ES6新特性</a></li><li><a href="../../html/JS/H5页面与Native的交互 封装使用.html">H5页面与Native的交互 封装使用</a></li></ul></li><li><a href="#"><span></span>React</a><ul><li><a href="../../html/React/React API 汇总.html">React API 汇总</a></li><li><a href="../../html/React/React中ES6与ES5构建差别及JSX的使用.html">React中ES6与ES5构建差别及JSX的使用</a></li><li><a href="../../html/React/React基础知识.html">React基础知识</a></li><li><a href="../../html/React/React编码规范.html">React编码规范</a></li><li><a href="../../html/React/webpack搭配react入门及实践.html">webpack搭配react入门及实践</a></li></ul></li><li><a href="#"><span></span>RN 基础</a><ul><li><a href="../../html/RN 基础/ReactNative学习提纲.html">ReactNative学习提纲</a></li><li><a href="../../html/RN 基础/ReactNative 命令汇总.html">ReactNative 命令汇总</a></li><li><a href="../../html/RN 基础/初探React-Native.html">初探React-Native</a></li><li><a href="../../html/RN 基础/React-Native样式表指南.html">React-Native样式表指南</a></li><li><a href="../../html/RN 基础/ReactNative 布局之FlexBox.html">ReactNative 布局之FlexBox</a></li></ul></li><li><a href="#"><span></span>RN API</a><ul><li><a href="../../html/RN API/React Native API模块 之 Alert .html">React Native API模块 之 Alert </a></li><li><a href="../../html/RN API/React Native API模块 之 Dimensions.html">React Native API模块 之 Dimensions</a></li><li><a href="../../html/RN API/React Native API模块 之 Keyboard.html">React Native API模块 之 Keyboard</a></li><li class="active"><a href="../../html/RN API/React Native API模块 之 StyleSheet.html">React Native API模块 之 StyleSheet</a></li><li><a href="../../html/RN API/React Native API模块 之 ToastAndroid.html">React Native API模块 之 ToastAndroid</a></li></ul></li><li><a href="#"><span></span>RN 组件</a><ul><li><a href="../../html/RN 组件/RN组件 之 Text 及注意要点 .html">RN组件 之 Text 及注意要点 </a></li><li><a href="../../html/RN 组件/RN组件 之 TextInput 及注意要点.html">RN组件 之 TextInput 及注意要点</a></li></ul></li><li><a href="#"><span></span>RN 工具</a><ul><li><a href="../../html/RN 工具/基于Fetch封装HTTPUtil工具类.html">基于Fetch封装HTTPUtil工具类</a></li></ul></li><li><a href="#"><span></span>开发</a><ul><li><a href="../../html/开发/RN版  bug反馈列表(rn 0.35).html">RN版  bug反馈列表(rn 0.35)</a></li><li><a href="../../html/开发/RN版  项目重构(基于RN 0.41.2).html">RN版  项目重构(基于RN 0.41.2)</a></li></ul></li><li><a href="../../html/关于.html">关于</a></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0React Native API模块 之 StyleSheet">React Native API模块 之 StyleSheet</a><ul><li><a href="#t1StyleSheet">StyleSheet</a></li><li><a href="#t2ToastAndroid">ToastAndroid</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <p>&#xFEFF;</p>
+<h1 id="t0React Native API&#x6A21;&#x5757; &#x4E4B; StyleSheet">React Native API&#x6A21;&#x5757; &#x4E4B; StyleSheet <a href="#t0React Native API&#x6A21;&#x5757; &#x4E4B; StyleSheet"> # </a></h1>
+<h2 id="t1StyleSheet">StyleSheet <a href="#t1StyleSheet"> # </a></h2>
+<p>&#x5728;React Native&#x4E2D;&#xFF0C;&#x8BE5;StyleSheet&#x6A21;&#x5757;&#x662F;&#x5B9E;&#x73B0;&#x4E86;&#x7C7B;&#x4F3C;Web&#x4E2D;CSS&#x6837;&#x5F0F;&#x8868;&#x7684;&#x529F;&#x80FD;&#x3002;&#x7B80;&#x5355;&#x7684;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;StyleSheet&#x6587;&#x4EF6;&#x7684;&#x5B9E;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
+<pre><code>const styles = StyleSheet.create({
+  container: {
+    borderRadius: 4,
+    borderWidth: 0.5,
+    borderColor: &apos;#d6d7da&apos;,
+  },
+  title: {
+    fontSize: 19,
+    fontWeight: &apos;bold&apos;,
+  },
+  activeTitle: {
+    color: &apos;red&apos;,
+  },
+});
+
+&lt;View style={styles.container}&gt;
+  &lt;Text style={[styles.title, this.props.isActive &amp;&amp; styles.activeTitle]} /&gt;
+&lt;/View&gt;
+</code></pre><p>&#x8FD9;&#x6837;&#x5199;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x4E00;&#x4E9B;&#x4F18;&#x70B9;:</p>
+<p>1.&#x4ECE;&#x4EE3;&#x7801;&#x8D28;&#x91CF;&#x89D2;&#x5EA6;&#x6765;&#x5206;&#x6790;:</p>
+<ul>
+<li>&#x4ECE;render&#x6E32;&#x67D3;&#x65B9;&#x6CD5;&#x4E2D;&#x79FB;&#x9664;&#x4E86;styles&#x6837;&#x5F0F;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4F7F;&#x4EE3;&#x7801;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x9605;&#x8BFB;</li>
+<li>&#x901A;&#x8FC7;&#x5BF9;&#x4E0D;&#x540C;&#x6837;&#x5F0F;&#x547D;&#x540D;&#xFF0C;&#x6B63;&#x597D;&#x4E5F;&#x662F;&#x5BF9;render&#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x7EC4;&#x4EF6;&#x7684;&#x4E00;&#x79CD;&#x6807;&#x5FD7;</li>
+</ul>
+<p>2.&#x4ECE;&#x6027;&#x80FD;&#x89D2;&#x5EA6;&#x6765;&#x5206;&#x6790;:</p>
+<ul>
+<li>&#x901A;&#x8FC7;StyleSheet&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6807;&#x5FD7;&#x7684;&#x6837;&#x5F0F;ID&#x6765;&#x5F15;&#x7528;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Style&#x5BF9;&#x8C61;</li>
+<li>&#x8BE5;&#x5141;&#x8BB8;&#x6837;&#x5F0F;&#x901A;&#x8FC7;&#x6865;&#x63A5;&#x5728;&#x539F;&#x751F;&#x4EE3;&#x7801;&#x548C;JavaScript&#x4E2D;&#x4F20;&#x9012;&#x4E00;&#x6B21;&#xFF0C;&#x540E;&#x9762;&#x5168;&#x90E8;&#x901A;&#x8FC7;&#x8BE5;id&#x8FDB;&#x884C;&#x5F15;&#x7528;(&#x4E0D;&#x8FC7;&#x73B0;&#x5728;&#x8BE5;&#x529F;&#x80FD;&#x8FD8;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;)</li>
+</ul>
+<p>&#x65B9;&#x6CD5;</p>
+<p>create(obj:{[key:string]:any})  static &#x9759;&#x6001;&#x65B9;&#x6CD5;   &#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x5E38;&#x89C1;&#x4E00;&#x4E2A;StyleSheet&#x6837;&#x5F0F;</p>
+<p>&#x4E09;)&#x5C5E;&#x6027;</p>
+<p>1.hairlineWidth:CallExpression  &#x8BE5;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x5F53;&#x524D;&#x5E73;&#x53F0;&#x6700;&#x7EC6;&#x7684;&#x5BBD;&#x5EA6;&#x3002;&#x8BE5;&#x5C5E;&#x6027;&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x8FB9;&#x6846;&#x6216;&#x8005;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5206;&#x5272;&#x7EBF;&#x3002;&#x4F8B;&#x5982;:</p>
+<pre><code>{
+    borderBottomColor: &apos;#bbb&apos;,
+    borderBottomWidth: StyleSheet.hairlineWidth
+}
+</code></pre><p>&#x8BE5;&#x4F1A;&#x6839;&#x636E;&#x5F53;&#x524D;&#x5E73;&#x53F0;&#x4FE1;&#x606F;&#xFF0C;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x6839;&#x5F88;&#x7EC6;&#x7684;&#x7EBF;&#x3002;</p>
+<p>2.flatten: CallExpression</p>
+<h2 id="t2ToastAndroid">ToastAndroid <a href="#t2ToastAndroid"> # </a></h2>
+<p>&#x6A21;&#x5757;:ToastAndroid&#x3002;android&#x5E73;&#x53F0;&#x7684;toast&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x8BE5;ToastAndroid&#x6A21;&#x5757;&#x662F;&#x628A;Android&#x5E73;&#x53F0;&#x539F;&#x751F;&#x6A21;&#x5757;Toast&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;JS&#x6A21;&#x5757;&#x4F7F;&#x7528;&#xFF0C;&#x6765;&#x8FDB;&#x884C;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;toast&#x6D88;&#x606F;&#x3002;&#x8BE5;&#x6A21;&#x5757;&#x6709;&#x4E00;&#x4E2A;&apos;show&apos;&#x65B9;&#x6CD5;&#x4F1A;&#x4F20;&#x5165;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x53C2;&#x6570;:&#x2460;:message  string &#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#xFF0C;&#x8BBE;&#x7F6E;&#x8981;&#x8FDB;&#x884C;toast&#x663E;&#x793A;&#x7684;&#x6587;&#x672C;    &#x2461;:duration  int&#x683C;&#x5F0F; toast&#x6D88;&#x606F;&#x5F39;&#x51FA;&#x663E;&#x793A;&#x7684;&#x65F6;&#x957F;&#x3002;&#x6709;&#x4E24;&#x4E2A;&#x53EF;&#x9009;&#x503C;ToastAndroid.SHORT&#x6216;&#x8005;ToastAndroid.LONG</p>
+<p>(&#x4E8C;)&#x65B9;&#x6CD5;</p>
+<p>1.show(message:string,duration:number)  static &#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x8BBE;&#x7F6E;toast&#x6D88;&#x606F;&#x7684;&#x5F39;&#x51FA;</p>
+<p>(&#x4E09;)&#x5C5E;&#x6027;</p>
+<p>1.SHORT  &#x9759;&#x6001;int&#x503C;&#xFF0C;&#x8868;&#x793A;toast&#x663E;&#x793A;&#x8F83;&#x77ED;&#x7684;&#x65F6;&#x95F4;</p>
+<p>2.LONG   &#x9759;&#x6001;int&#x503C;&#xFF0C;&#x8868;&#x793A;otast&#x663E;&#x793A;&#x8F83;&#x957F;&#x7684;&#x65F6;&#x95F4;</p>
+<p>(&#x56DB;)&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;</p>
+<p>ToastAndroid&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
+<pre><code>&apos;use strict&apos;;
+import React, {
+  AppRegistry,
+  Component,
+  StyleSheet,
+  Text,
+  View,
+  ToastAndroid,
+  TouchableHighlight,
+} from &apos;react-native&apos;;
+class CustomButton extends React.Component {
+  render() {
+    return (
+      &lt;TouchableHighlight
+        style={styles.button}
+        underlayColor=&quot;#a5a5a5&quot;
+        onPress={this.props.onPress}&gt;
+        &lt;Text style={styles.buttonText}&gt;{this.props.text}&lt;/Text&gt;
+      &lt;/TouchableHighlight&gt;
+    );
+  }
+}
+class ToastAndroidDemo extends Component {
+  render() {
+    return (
+      &lt;View&gt;
+        &lt;Text style={styles.welcome}&gt;
+          &#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x77ED;&#x65F6;&#x95F4;&#x7684;toast
+        &lt;/Text&gt;
+        &lt;CustomButton text=&quot;&#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x77ED;&#x65F6;&#x95F4;toast&quot;
+        onPress={()=&gt;ToastAndroid.show(&apos;&#x70B9;&#x51FB;&#x6211;&#x597D;&#x75BC;,&#x77ED;&#x65F6;&#x95F4;&#x7684;~&apos;,ToastAndroid.SHORT)}/&gt;
+        &lt;Text style={styles.welcome}&gt;
+          &#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x957F;&#x65F6;&#x95F4;&#x7684;toast
+        &lt;/Text&gt;
+        &lt;CustomButton text=&quot;&#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x957F;&#x65F6;&#x95F4;toast&quot;
+        onPress={()=&gt;ToastAndroid.show(&apos;&#x70B9;&#x51FB;&#x6211;&#x597D;&#x75BC;,&#x957F;&#x65F6;&#x95F4;&#x7684;~&apos;,ToastAndroid.LONG)}/&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+const styles = StyleSheet.create({
+  button: {
+    margin:5,
+    backgroundColor: &apos;white&apos;,
+    padding: 15,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: &apos;#cdcdcd&apos;,
+  }
+});
+
+AppRegistry.registerComponent(&apos;ToastAndroidDemo&apos;, () =&gt; ToastAndroidDemo);
+</code></pre><p>&#x8FD0;&#x884C;&#x622A;&#x56FE;&#x5982;&#x4E0B;:</p>
+<p><img src="../../../../img/RN/ToastAndroid.gif" alt="ToastAndroid.gif"></p>
+<p>[&#x5168;&#x6587;&#x5B8C;]</p>
+
+        <div class="copyright">Created by <a href="https://github.com/shenbao" target="_blank">ShenBao</a></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -18,7 +18,8 @@
             "首页.md",
             {
                 "JS": [
-                    "快速搞定常用的ES6新特性.md"
+                    "快速搞定常用的ES6新特性.md",
+                    "H5页面与Native的交互 封装使用.md"
                 ]
             },
             {
@@ -41,13 +42,17 @@
             },
             {
                 "RN API": [
-                    "React Native API模块（一）Dimensions、StyleSheet、ToastAndroid、Alert.md",
-                    "React Native API模块（二）Keyboard.md"
+                    "React Native API模块 之 Alert .md",
+                    "React Native API模块 之 Dimensions.md",
+                    "React Native API模块 之 Keyboard.md",
+                    "React Native API模块 之 StyleSheet.md",
+                    "React Native API模块 之 ToastAndroid.md"
                 ]
             },
             {
                 "RN 组件": [
-                    "RN组件之Text和TextInput以及注意要点.md"
+                    "RN组件 之 Text 及注意要点 .md",
+                    "RN组件 之 TextInput 及注意要点.md"
                 ]
             },
             {
