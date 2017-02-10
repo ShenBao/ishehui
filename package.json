@@ -33,14 +33,15 @@
             },
             {
                 "RN 基础": [
-                    "ReactNative学习提纲.md",
-                    "ReactNative 命令汇总.md",
-                    "初探React-Native.md",
-                    "React-Native样式表指南.md",
-                    "ReactNative 布局之FlexBox.md",
+                    "React Native 学习提纲.md",
+                    "React Native 常用第三方组件汇总.md",
+                    "React Native 初探.md",
+                    "React Native 命令汇总.md",
+                    "React Native 样式表指南.md",
+                    "React Native 布局之FlexBox.md",
                     "React Native 基础之Props(属性)与State(状态).md",
-                    "React Native基础之核心组件使用教程介绍.md",
-                    "WebStorm开发工具设置React Native代码智能提醒.md"
+                    "React Native 基础之核心组件使用教程介绍.md",
+                    "React Native 开发之WebStorm开发工具设置代码智能提醒.md"
                 ]
             },
             {
