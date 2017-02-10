@@ -37,7 +37,10 @@
                     "ReactNative 命令汇总.md",
                     "初探React-Native.md",
                     "React-Native样式表指南.md",
-                    "ReactNative 布局之FlexBox.md"
+                    "ReactNative 布局之FlexBox.md",
+                    "React Native 基础之Props(属性)与State(状态).md",
+                    "React Native基础之核心组件使用教程介绍.md",
+                    "WebStorm开发工具设置React Native代码智能提醒.md"
                 ]
             },
             {
@@ -52,7 +55,8 @@
             {
                 "RN 组件": [
                     "RN组件 之 Text 及注意要点 .md",
-                    "RN组件 之 TextInput 及注意要点.md"
+                    "RN组件 之 TextInput 及注意要点.md",
+                    "React Native控件之Touchable X 系列组件.md"
                 ]
             },
             {
