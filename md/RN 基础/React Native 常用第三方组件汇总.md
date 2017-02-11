@@ -48,6 +48,7 @@ react-native-htmlview               将 HTML 目录作为本地视图的控件�
 
 react-native-easy-toast         一款简单易用的 Toast 组件，支持 Android&iOS.
 
+react-native-webview-invoke     React Native和WebView中的函数可以互相调用
 
 选项卡   https://github.com/exponentjs/react-native-tab-navigator
 
