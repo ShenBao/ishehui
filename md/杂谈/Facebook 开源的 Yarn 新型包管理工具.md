@@ -86,7 +86,7 @@ yarn remove [package] — 移除某个包
 
 ## 其他命令
 
-yarn -v   查看版本
+yarn --version
 
 yarn add webpack
 
