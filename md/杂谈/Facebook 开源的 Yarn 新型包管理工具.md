@@ -94,7 +94,35 @@ yarn upgrade webpack
 
 yarn add tty-browserify --offline 目前有bug
 
-yarn cache ls
+yarn cache ls   列出缓存中的模块
+
+yarn cache dir  package在本地的路径
+
+yarn cache clean  强制清除
+
+yarn config
+
+yarn config list 
+
+yarn config set registry registry.npm.taobao,org
+
+yarn info react
+
+yarn global add webpack
+
+yarn self-update
+
+yarn why webpack
+
+yarn run shell
+
+yarn ls
+
+yarn link [package...]
+
+yarn unlink [package...]
+
+yarn login
 
 
 
