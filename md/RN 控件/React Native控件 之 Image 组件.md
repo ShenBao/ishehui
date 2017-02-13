@@ -4,11 +4,13 @@
 
 ## 用法
 
+```
 <Image source={require('./img/my_icon.png')} />
 
 <Image source={{uri:'ic_launcher'}} />
 
-<Image require('../img/default_head.jpg') : {uri:`${serverConfig.imgUrlPrefix}${head}`} />
+<Image  source = { require('../img/default_head.jpg') : {uri:`${serverConfig.imgUrlPrefix}${head}`} } />
+```
 
 注意：加载项目资源图片从0.14版本开始react native支持加载我们项目目录中的图片资源
 
@@ -24,7 +26,7 @@ React Native中支持嵌套的方式，例如我们现在有一个Text组件，�
 
 ```
 <Image source={require('./img/my_icon.png')} >
-           <Text style={{color:'red'}}>下面是背景图</Text>
+    <Text style={{color:'red'}}>下面是背景图</Text>
 </Image>
 ```
 
