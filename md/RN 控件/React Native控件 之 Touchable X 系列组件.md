@@ -72,9 +72,9 @@ Touchable*系列组件的使用，该系列组件包括四种分别为:Touchable
 
 ```
 'use strict';
-import React, {
+import React, { Component } from 'react';
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   View,
@@ -130,9 +130,9 @@ AppRegistry.registerComponent('TouchableHighlightDemo', () => TouchableHighlight
 
 ```
 'use strict';
-import React, {
+import React, { Component } from 'react';
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   View,
@@ -173,9 +173,9 @@ AppRegistry.registerComponent('TouchableDemo', () => TouchableDemo);
 
 ```
 'use strict';
-import React, {
+import React, { Component } from 'react';
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   View,
