@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISH</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                ISH
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>JS</a><ul><li><a href="../../html/JS/快速搞定常用的ES6新特性.html">快速搞定常用的ES6新特性</a></li><li><a href="../../html/JS/H5页面与Native的交互 封装使用.html">H5页面与Native的交互 封装使用</a></li></ul></li><li><a href="#"><span></span>React</a><ul><li><a href="../../html/React/React API 汇总.html">React API 汇总</a></li><li><a href="../../html/React/React中ES6与ES5构建差别及JSX的使用.html">React中ES6与ES5构建差别及JSX的使用</a></li><li><a href="../../html/React/React基础知识.html">React基础知识</a></li><li><a href="../../html/React/React编码规范.html">React编码规范</a></li><li><a href="../../html/React/webpack搭配react入门及实践.html">webpack搭配react入门及实践</a></li></ul></li><li><a href="#"><span></span>RN 基础</a><ul><li><a href="../../html/RN 基础/React Native 学习提纲.html">React Native 学习提纲</a></li><li><a href="../../html/RN 基础/React Native 常用第三方组件汇总.html">React Native 常用第三方组件汇总</a></li><li><a href="../../html/RN 基础/React Native 初探.html">React Native 初探</a></li><li><a href="../../html/RN 基础/React Native 命令汇总.html">React Native 命令汇总</a></li><li><a href="../../html/RN 基础/React Native 样式表指南.html">React Native 样式表指南</a></li><li><a href="../../html/RN 基础/React Native 布局之FlexBox.html">React Native 布局之FlexBox</a></li><li><a href="../../html/RN 基础/React Native 基础之Props(属性)与State(状态).html">React Native 基础之Props(属性)与State(状态)</a></li><li><a href="../../html/RN 基础/React Native 基础之核心组件使用教程介绍.html">React Native 基础之核心组件使用教程介绍</a></li><li><a href="../../html/RN 基础/React Native 开发之WebStorm开发工具设置代码智能提醒.html">React Native 开发之WebStorm开发工具设置代码智能提醒</a></li><li><a href="../../html/RN 基础/React Native特定平台代码说明.html">React Native特定平台代码说明</a></li></ul></li><li><a href="#"><span></span>RN API</a><ul><li><a href="../../html/RN API/React Native API模块 之 Alert .html">React Native API模块 之 Alert </a></li><li><a href="../../html/RN API/React Native API模块 之 Dimensions.html">React Native API模块 之 Dimensions</a></li><li><a href="../../html/RN API/React Native API模块 之 Keyboard.html">React Native API模块 之 Keyboard</a></li><li><a href="../../html/RN API/React Native API模块 之 StyleSheet.html">React Native API模块 之 StyleSheet</a></li><li><a href="../../html/RN API/React Native API模块 之 ToastAndroid.html">React Native API模块 之 ToastAndroid</a></li></ul></li><li><a href="#"><span></span>RN 控件</a><ul><li class="active"><a href="../../html/RN 控件/React Native控件 之 Text 及注意要点 .html">React Native控件 之 Text 及注意要点 </a></li><li><a href="../../html/RN 控件/React Native控件 之 TextInput 及注意要点.html">React Native控件 之 TextInput 及注意要点</a></li><li><a href="../../html/RN 控件/React Native控件 之 Touchable X 系列组件.html">React Native控件 之 Touchable X 系列组件</a></li><li><a href="../../html/RN 控件/React Native控件 之 Image 组件.html">React Native控件 之 Image 组件</a></li></ul></li><li><a href="#"><span></span>RN 工具</a><ul><li><a href="../../html/RN 工具/基于Fetch封装HTTPUtil工具类.html">基于Fetch封装HTTPUtil工具类</a></li></ul></li><li><a href="#"><span></span>开发</a><ul><li><a href="../../html/开发/RN版  bug反馈列表(rn 0.35).html">RN版  bug反馈列表(rn 0.35)</a></li><li><a href="../../html/开发/RN版  项目重构(基于RN 0.41.2).html">RN版  项目重构(基于RN 0.41.2)</a></li></ul></li><li><a href="#"><span></span>杂谈</a><ul><li><a href="../../html/杂谈/notpad++快捷键.html">notpad++快捷键</a></li><li><a href="../../html/杂谈/Facebook 开源的 Yarn 新型包管理工具.html">Facebook 开源的 Yarn 新型包管理工具</a></li></ul></li><li><a href="../../html/关于.html">关于</a></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0Text组件">Text组件</a><ul><li><a href="#t1介绍">介绍</a></li><li><a href="#t2属性方法(主要一些可用的属性)">属性方法(主要一些可用的属性)</a></li><li><a href="#t3风格样式">风格样式</a></li><li><a href="#t4特别注意点">特别注意点</a><ul><li><a href="#t5嵌套特点">嵌套特点</a></li><li><a href="#t6容器布局规则">容器布局规则</a></li><li><a href="#t7样式继承规格">样式继承规格</a></li></ul></li><li><a href="#t8注">注</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <p>&#xFEFF;</p>
+<h1 id="t0Text&#x7EC4;&#x4EF6;">Text&#x7EC4;&#x4EF6; <a href="#t0Text&#x7EC4;&#x4EF6;"> # </a></h1>
+<h2 id="t1&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD; <a href="#t1&#x4ECB;&#x7ECD;"> # </a></h2>
+<p>&#x8BE5;Text&#x7EC4;&#x4EF6;&#x4E3A;React&#x4E2D;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7EC4;&#x4EF6;&#xFF0C;&#x8BE5;&#x548C;Android&#x4E2D;&#x7684;TextView&#x7EC4;&#x4EF6;&#x76F8;&#x7C7B;&#x4F3C;&#x7528;&#x6765;&#x663E;&#x793A;&#x57FA;&#x672C;&#x7684;&#x6587;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x8BE5;&#x63A7;&#x4EF6;&#x9664;&#x4E86;&#x57FA;&#x672C;&#x7684;&#x663E;&#x793A;&#x5E03;&#x5C40;&#x4E4B;&#x5916;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5D4C;&#x5957;&#x663E;&#x793A;&#xFF0C;&#x8BBE;&#x7F6E;&#x6837;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x53EF;&#x4EE5;&#x505A;&#x4E8B;&#x4EF6;(&#x4F8B;&#x5982;:&#x70B9;&#x51FB;)&#x5904;&#x7406;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code>/**
+ * &#x8FDB;&#x884C;&#x7B80;&#x5355;Text&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;
+ * Sample React Native App  test.android.js
+ * https://github.com/facebook/react-native
+ */
+&apos;use strict&apos;;
+import React, { Component } from &apos;react&apos;;
+import {
+  AppRegistry,
+  Text,
+  View,
+  StyleSheet,
+} from &apos;react-native&apos;;
+var styles = StyleSheet.create({
+     titleBase:{
+        margin:10,
+        textAlign:&apos;center&apos;,
+        color:&apos;red&apos;,
+        fontSize:28,
+        fontFamily:&apos;Cochin&apos;,
+     },
+     title:{
+        color:&apos;green&apos;,
+        fontWeight:&apos;bold&apos;,
+     },
+});
+var TestText = React.createClass({
+  render: function() {
+    return (
+      &lt;Text style={styles.titleBase}&gt;
+         I am root text!
+         &lt;Text style={styles.title}&gt;
+              I am chid text!
+          &lt;/Text&gt;
+      &lt;/Text&gt;
+    );
+  }
+});
+AppRegistry.registerComponent(&apos;TestText&apos;, () =&gt; TestText);
+</code></pre><p>&#x4E0A;&#x8FF0;&#x5B9E;&#x4F8B;&#x91C7;&#x7528;TextView&#x7684;&#x5D4C;&#x5957;&#x65B9;&#x5F0F;&#xFF0C;&#x6700;&#x5916;&#x5C42;&#x7684;Text&#x7684;Style titleBase&#x5B9A;&#x4E49;&#x76F8;&#x5173;&#x98CE;&#x683C;&#xFF0C;&#x5185;&#x5C42;&#x7684;&#x98CE;&#x683C;style&#x5B9A;&#x4E49;&#x76F8;&#x5173;&#x98CE;&#x683C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD0;&#x884C;&#x6548;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x5185;&#x5C42;&#x6CA1;&#x6709;&#x91CD;&#x5199;&#x5916;&#x5C42;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x5185;&#x5C42;&#x4F1A;&#x8FDB;&#x884C;&#x7EE7;&#x627F;&#x3002;&#x5982;&#x679C;&#x91CD;&#x5199;&#x4E86;&#x6837;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x5185;&#x5C42;&#x4F1A;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x8FDB;&#x884C;&#x6E32;&#x67D3;&#xFF0C;&#x8BE5;&#x548C;CSS&#x6837;&#x5F0F;&#x8868;&#x5DEE;&#x4E0D;&#x591A;&#x3002;</p>
+<h2 id="t2&#x5C5E;&#x6027;&#x65B9;&#x6CD5;(&#x4E3B;&#x8981;&#x4E00;&#x4E9B;&#x53EF;&#x7528;&#x7684;&#x5C5E;&#x6027;)">&#x5C5E;&#x6027;&#x65B9;&#x6CD5;(&#x4E3B;&#x8981;&#x4E00;&#x4E9B;&#x53EF;&#x7528;&#x7684;&#x5C5E;&#x6027;) <a href="#t2&#x5C5E;&#x6027;&#x65B9;&#x6CD5;(&#x4E3B;&#x8981;&#x4E00;&#x4E9B;&#x53EF;&#x7528;&#x7684;&#x5C5E;&#x6027;)"> # </a></h2>
+<ul>
+<li>&#x2460;.allowFontScaling (bool):&#x63A7;&#x5236;&#x5B57;&#x4F53;&#x662F;&#x5426;&#x6839;&#x636E;iOS&#x7684;&#x8BBE;&#x7F6E;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x7F29;&#x653E;-iOS&#x5E73;&#x53F0;,Android&#x5E73;&#x53F0;&#x4E0D;&#x9002;&#x7528;</li>
+<li>&#x2461;.numberOfLines (number):&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;Text&#x663E;&#x793A;&#x6587;&#x672C;&#x7684;&#x884C;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x8D85;&#x8FC7;&#x4E86;&#x884C;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x5176;&#x4ED6;&#x591A;&#x4F59;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x4E86;&#x3002;</li>
+<li>&#x2462;.onLayout (function) &#x5F53;&#x5E03;&#x5C40;&#x4F4D;&#x7F6E;&#x53D1;&#x751F;&#x53D8;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#x89E6;&#x53D1;&#x8BE5;&#x65B9;&#x6CD5;, &#x5176;&#x4E2D;&#x8BE5;function&#x7684;&#x53C2;&#x6570;&#x5982;&#x4E0B;:
+[code lang=&quot;&quot; start=&quot;&quot; highlight=&quot;&quot;]{nativeEvent: {layout: {x, y, width, height}}}[/code]</li>
+<li>&#x2463;.onPress (fcuntion) &#x8BE5;&#x65B9;&#x6CD5;&#x5F53;&#x6587;&#x672C;&#x53D1;&#x751F;&#x70B9;&#x51FB;&#x7684;&#x65F6;&#x5019;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;.</li>
+</ul>
+<h2 id="t3&#x98CE;&#x683C;&#x6837;&#x5F0F;">&#x98CE;&#x683C;&#x6837;&#x5F0F; <a href="#t3&#x98CE;&#x683C;&#x6837;&#x5F0F;"> # </a></h2>
+<ul>
+<li>1.&#x7EE7;&#x627F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;View&#x7EC4;&#x4EF6;&#x7684;&#x6240;&#x6709;Style(&#x5177;&#x4F53;&#x67E5;&#x770B;<a href="http://facebook.github.io/react-native/docs/view.html#style">http://facebook.github.io/react-native/docs/view.html#style</a>)</li>
+<li>2.color:&#x5B57;&#x4F53;&#x989C;&#x8272;</li>
+<li>3.fontFamily &#x5B57;&#x4F53;&#x540D;&#x79F0;</li>
+<li>4.fontSize  &#x5B57;&#x4F53;&#x5927;&#x5C0F;</li>
+<li>5.fontStyle   &#x5B57;&#x4F53;&#x98CE;&#x683C;(normal,italic)</li>
+<li>6.fontWeight  &#x5B57;&#x4F53;&#x7C97;&#x7EC6;&#x6743;&#x91CD;(&quot;normal&quot;, &apos;bold&apos;, &apos;100&apos;, &apos;200&apos;, &apos;300&apos;, &apos;400&apos;, &apos;500&apos;, &apos;600&apos;, &apos;700&apos;, &apos;800&apos;, &apos;900&apos;)</li>
+<li>7.textShadowOffset &#x8BBE;&#x7F6E;&#x9634;&#x5F71;&#x6548;&#x679C;{width: number, height: number}</li>
+<li>8.textShadowRadius &#x9634;&#x5F71;&#x6548;&#x679C;&#x5706;&#x89D2;</li>
+<li>9..textShadowColor &#x9634;&#x5F71;&#x6548;&#x679C;&#x7684;&#x989C;&#x8272;</li>
+<li>10.letterSpacing &#x5B57;&#x7B26;&#x95F4;&#x8DDD;</li>
+<li>11.lineHeight &#x884C;&#x9AD8;</li>
+<li>12.textAlign   &#x6587;&#x672C;&#x5BF9;&#x5176;&#x65B9;&#x5F0F;(&quot;auto&quot;, &apos;left&apos;, &apos;right&apos;, &apos;center&apos;, &apos;justify&apos;)</li>
+<li>13.textDecorationLine  &#x6A2A;&#x7EBF;&#x4F4D;&#x7F6E; (&quot;none&quot;, &apos;underline&apos;, &apos;line-through&apos;, &apos;underline line-through&apos;)</li>
+<li>14.textDecorationStyle   &#x7EBF;&#x7684;&#x98CE;&#x683C;(&quot;solid&quot;, &apos;double&apos;, &apos;dotted&apos;, &apos;dashed&apos;)</li>
+<li>15.textDecorationColor  &#x7EBF;&#x7684;&#x989C;&#x8272;</li>
+<li>16.writingDirection  &#x6587;&#x672C;&#x65B9;&#x5411;(&quot;auto&quot;, &apos;ltr&apos;, &apos;rtl&apos;)</li>
+</ul>
+<h2 id="t4&#x7279;&#x522B;&#x6CE8;&#x610F;&#x70B9;">&#x7279;&#x522B;&#x6CE8;&#x610F;&#x70B9; <a href="#t4&#x7279;&#x522B;&#x6CE8;&#x610F;&#x70B9;"> # </a></h2>
+<h3 id="t5&#x5D4C;&#x5957;&#x7279;&#x70B9;">&#x5D4C;&#x5957;&#x7279;&#x70B9; <a href="#t5&#x5D4C;&#x5957;&#x7279;&#x70B9;"> # </a></h3>
+<p>&#x548C;Web&#x4E0A;&#x9762;&#x4E00;&#x76F4;&#x7684;&#x8BBE;&#x8BA1;&#x65B9;&#x6848;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x5D4C;&#x5957;&#x5305;&#x88F9;&#x7684;&#x65B9;&#x6848;&#xFF0C;&#x76F8;&#x540C;&#x7684;&#x5C5E;&#x6027;&#x7684;&#x6587;&#x672C;&#x53EF;&#x4EE5;&#x7528;&#x7236;&#x6807;&#x7B7E;&#x8FDB;&#x884C;&#x5305;&#x88F9;&#xFF0C;&#x7136;&#x540E;&#x5185;&#x90E8;&#x7279;&#x6B8A;&#x7684;&#x6587;&#x672C;&#x91C7;&#x7528;&#x5B50;&#x6807;&#x7B7E;&#x65B9;&#x6848;&#xFF0C;&#x5177;&#x4F53;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;:</p>
+<pre><code>&lt;Text style={{fontWeight: &apos;bold&apos;,fontSize:28}}&gt;
+      I am bold
+      &lt;Text style={{color: &apos;red&apos;}}&gt;
+        and red
+    &lt;/Text&gt;
+&lt;/Text&gt;
+</code></pre><p>&#x6574;&#x4F53;&#x5B57;&#x4F53;&#x683C;&#x5F0F;&#x4E3A;bold&#x4EE5;&#x53CA;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E3A;28&#xFF0C;&#x4E0D;&#x8FC7;&#x540E;&#x8FB9;&#x7684;&apos;and red&apos;&#x7684;&#x5B57;&#x4F53;&#x989C;&#x8272;&#x4E3A;&#x7EA2;&#x8272;&#x3002;</p>
+<h3 id="t6&#x5BB9;&#x5668;&#x5E03;&#x5C40;&#x89C4;&#x5219;">&#x5BB9;&#x5668;&#x5E03;&#x5C40;&#x89C4;&#x5219; <a href="#t6&#x5BB9;&#x5668;&#x5E03;&#x5C40;&#x89C4;&#x5219;"> # </a></h3>
+<p>FlexBox(&#x5F39;&#x6027;&#x5E03;&#x5C40;),</p>
+<h3 id="t7&#x6837;&#x5F0F;&#x7EE7;&#x627F;&#x89C4;&#x683C;">&#x6837;&#x5F0F;&#x7EE7;&#x627F;&#x89C4;&#x683C; <a href="#t7&#x6837;&#x5F0F;&#x7EE7;&#x627F;&#x89C4;&#x683C;"> # </a></h3>
+<p>&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#xFF0C;&#x800C;&#x4E14;&#x6837;&#x5F0F;&#x8FD8;&#x652F;&#x6301;&#x7EE7;&#x627F;&#xFF0C;&#x4E5F;&#x5C31;&#x8BF4;&#x7236;&#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x4E86;&#x76F8;&#x5173;&#x6837;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x5B50;&#x7EC4;&#x4EF6;&#x6CA1;&#x6709;&#x91CD;&#x5199;&#x6837;&#x5F0F;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x5B50;&#x7EC4;&#x4EF6;&#x4F1A;&#x7EE7;&#x627F;&#x7236;&#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x3002;</p>
+<pre><code>/**
+ *  Text&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x6F14;&#x793A;
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ */
+&apos;use strict&apos;;
+
+import React, { Component } from &apos;react&apos;;
+import {
+  AppRegistry,
+  Text,
+  View,
+  StyleSheet,
+} from &apos;react-native&apos;;
+var TestText = React.createClass({
+  render: function() {
+    return (
+      &lt;View&gt;
+       &lt;Text style={{color:&apos;red&apos;}}&gt;
+          My Text One  &#x7EA2;&#x8272;&#x3002;
+       &lt;/Text&gt;
+       &lt;Text style={{color:&apos;green&apos;,fontSize:20}}&gt; My Text Two &#x7EFF;&#x8272;&#x548C;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x3002;&lt;/Text&gt;
+       &lt;Text style={{color:&apos;green&apos;,fontFamily:&apos;Cochin&apos;}}&gt; My Text Three &#x7EFF;&#x8272;&#x548C;&#x5B57;&#x4F53;&#x540D;&#x79F0;&#x3002;&lt;/Text&gt;
+       &lt;Text style={{color:&apos;pink&apos;,fontWeight:&apos;bold&apos;}}&gt; My Text Four &#x7C89;&#x8272;&#x548C;&#x52A0;&#x7C97;&#x3002;&lt;/Text&gt;
+       &lt;Text style={{color:&apos;gray&apos;,fontStyle:&apos;italic&apos;}}&gt; My Text Five &#x7070;&#x8272;&#x548C;&#x659C;&#x4F53;&#x3002;&lt;/Text&gt;
+       &lt;Text style={{textAlign:&apos;center&apos;,fontStyle:&apos;italic&apos;}}&gt; My Text Six &#x5C45;&#x4E2D;&#x548C;&#x659C;&#x4F53;&#x3002;&lt;/Text&gt;
+       &lt;Text numberOfLines={1} style={{textAlign:&apos;center&apos;,fontStyle:&apos;italic&apos;}}&gt;&#x6D4B;&#x8BD5;&#x884C;&#x6570;My Text Six &#x5C45;&#x4E2D;&#x548C;&#x659C;&#x4F53;&#x3002;My Text Six &#x5C45;&#x4E2D;&#x548C;&#x659C;&#x4F53;&#x3002; My Text Six &#x5C45;&#x4E2D;&#x548C;&#x659C;&#x4F53;&#x3002;&lt;/Text&gt;
+       &lt;Text style={{marginLeft:50,marginTop:50,textAlign:&apos;center&apos;,fontStyle:&apos;italic&apos;}}&gt;&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x7684;&#x95F4;&#x8DDD;,&#x5C45;&#x5DE6;&#xFF0C;&#x5C45;&#x9876;&#x90E8;50&lt;/Text&gt;
+       &lt;Text numberOfLines={2} style={{lineHeight:50,textAlign:&apos;center&apos;,fontStyle:&apos;italic&apos;}}&gt;
+          &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; 
+          &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8; &#x6D4B;&#x8BD5;&#x884C;&#x9AD8;
+       &lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+});
+AppRegistry.registerComponent(&apos;TestText&apos;, () =&gt; TestText);
+</code></pre><h2 id="t8&#x6CE8;">&#x6CE8; <a href="#t8&#x6CE8;"> # </a></h2>
+<p>1&#x3001;&#x5728;&#x4F7F;&#x7528;Text&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5B9E;&#x73B0;&#x6587;&#x672C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x3001;&#x6C34;&#x5E73;&#x5C45;&#x4E2D;&#x7684;&#x6548;&#x679C;&#xFF08;iOS&#x548C;Android&#x901A;&#x7528;&#xFF09;</p>
+<pre><code>&lt;View  style={styles.textView}&gt;
+    &lt;Text style={styles.text}&gt; &#x6C34;&#x5E73;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&lt;/Text&gt;
+&lt;/View&gt;
+
+textView:{
+  flexDirection:&apos;column&apos;,
+  justifyContent:&apos;center&apos;,
+  alignItems:&apos;center&apos;,
+}
+
+text:{
+    fontSize:12,
+    color:&apos;#f2f2f2&apos;,
+}
+</code></pre><p>&#x5C3D;&#x91CF;&#x7528;view&#x53BB;&#x5305;&#x88F9;&#x4E00;&#x5C42;Text&#x7EC4;&#x4EF6;&#xFF0C;text&#x7EC4;&#x4EF6;&#x53EA;&#x8D1F;&#x8D23;&#x57FA;&#x7840;&#x7684;&#x6587;&#x5B57;&#x6837;&#x5F0F;&#xFF0C;View&#x7EC4;&#x4EF6;&#x8D1F;&#x8D23;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x7B49;&#x3002;</p>
+<p>2&#x3001;&#x5728;Android&#x5E73;&#x53F0;&#x4E0A;&#xFF0C;Text&#x7EC4;&#x4EF6;&#x91CC;&#x4F7F;&#x7528;paddingLeft &#x5C5E;&#x6027;&#xFF0C;&#x4E0D;&#x597D;&#x4F7F;&#xFF0C;&#x76F4;&#x63A5;&#x9876;&#x7740;View&#x4E86;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#xFF1A;1&#xFF09;&#x5C06;paddingLeft&#x653E;&#x5728;View&#x5C5E;&#x6027;&#x4E0A;;2&#xFF09;&#x5C06;paddingLeft&#x4FEE;&#x6539;&#x4E3A;marginLeft</p>
+<p>&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6848;&#x4FEE;&#x6539;&#xFF0C;&#x628A;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x4EA4;&#x7ED9;view&#x53BB;&#x5904;&#x7406;&#xFF0C;Text&#x53EA;&#x8D1F;&#x8D23;&#x6587;&#x672C;&#x5C5E;&#x6027;&#x7684;&#x663E;&#x793A;&#x3002;</p>
+<p>[&#x5168;&#x6587;&#x5B8C;]</p>
+
+        <div class="copyright">Created by <a href="https://github.com/shenbao" target="_blank">ShenBao</a></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

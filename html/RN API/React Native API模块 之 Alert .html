@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISH</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                ISH
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>JS</a><ul><li><a href="../../html/JS/快速搞定常用的ES6新特性.html">快速搞定常用的ES6新特性</a></li><li><a href="../../html/JS/H5页面与Native的交互 封装使用.html">H5页面与Native的交互 封装使用</a></li></ul></li><li><a href="#"><span></span>React</a><ul><li><a href="../../html/React/React API 汇总.html">React API 汇总</a></li><li><a href="../../html/React/React中ES6与ES5构建差别及JSX的使用.html">React中ES6与ES5构建差别及JSX的使用</a></li><li><a href="../../html/React/React基础知识.html">React基础知识</a></li><li><a href="../../html/React/React编码规范.html">React编码规范</a></li><li><a href="../../html/React/webpack搭配react入门及实践.html">webpack搭配react入门及实践</a></li></ul></li><li><a href="#"><span></span>RN 基础</a><ul><li><a href="../../html/RN 基础/React Native 学习提纲.html">React Native 学习提纲</a></li><li><a href="../../html/RN 基础/React Native 常用第三方组件汇总.html">React Native 常用第三方组件汇总</a></li><li><a href="../../html/RN 基础/React Native 初探.html">React Native 初探</a></li><li><a href="../../html/RN 基础/React Native 命令汇总.html">React Native 命令汇总</a></li><li><a href="../../html/RN 基础/React Native 样式表指南.html">React Native 样式表指南</a></li><li><a href="../../html/RN 基础/React Native 布局之FlexBox.html">React Native 布局之FlexBox</a></li><li><a href="../../html/RN 基础/React Native 基础之Props(属性)与State(状态).html">React Native 基础之Props(属性)与State(状态)</a></li><li><a href="../../html/RN 基础/React Native 基础之核心组件使用教程介绍.html">React Native 基础之核心组件使用教程介绍</a></li><li><a href="../../html/RN 基础/React Native 开发之WebStorm开发工具设置代码智能提醒.html">React Native 开发之WebStorm开发工具设置代码智能提醒</a></li><li><a href="../../html/RN 基础/React Native特定平台代码说明.html">React Native特定平台代码说明</a></li></ul></li><li><a href="#"><span></span>RN API</a><ul><li class="active"><a href="../../html/RN API/React Native API模块 之 Alert .html">React Native API模块 之 Alert </a></li><li><a href="../../html/RN API/React Native API模块 之 Dimensions.html">React Native API模块 之 Dimensions</a></li><li><a href="../../html/RN API/React Native API模块 之 Keyboard.html">React Native API模块 之 Keyboard</a></li><li><a href="../../html/RN API/React Native API模块 之 StyleSheet.html">React Native API模块 之 StyleSheet</a></li><li><a href="../../html/RN API/React Native API模块 之 ToastAndroid.html">React Native API模块 之 ToastAndroid</a></li></ul></li><li><a href="#"><span></span>RN 控件</a><ul><li><a href="../../html/RN 控件/React Native控件 之 Text 及注意要点 .html">React Native控件 之 Text 及注意要点 </a></li><li><a href="../../html/RN 控件/React Native控件 之 TextInput 及注意要点.html">React Native控件 之 TextInput 及注意要点</a></li><li><a href="../../html/RN 控件/React Native控件 之 Touchable X 系列组件.html">React Native控件 之 Touchable X 系列组件</a></li><li><a href="../../html/RN 控件/React Native控件 之 Image 组件.html">React Native控件 之 Image 组件</a></li></ul></li><li><a href="#"><span></span>RN 工具</a><ul><li><a href="../../html/RN 工具/基于Fetch封装HTTPUtil工具类.html">基于Fetch封装HTTPUtil工具类</a></li></ul></li><li><a href="#"><span></span>开发</a><ul><li><a href="../../html/开发/RN版  bug反馈列表(rn 0.35).html">RN版  bug反馈列表(rn 0.35)</a></li><li><a href="../../html/开发/RN版  项目重构(基于RN 0.41.2).html">RN版  项目重构(基于RN 0.41.2)</a></li></ul></li><li><a href="#"><span></span>杂谈</a><ul><li><a href="../../html/杂谈/notpad++快捷键.html">notpad++快捷键</a></li><li><a href="../../html/杂谈/Facebook 开源的 Yarn 新型包管理工具.html">Facebook 开源的 Yarn 新型包管理工具</a></li></ul></li><li><a href="../../html/关于.html">关于</a></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0React Native API模块 之Alert">React Native API模块 之Alert</a><ul><li><a href="#t1Alert">Alert</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <p>&#xFEFF;</p>
+<h1 id="t0React Native API&#x6A21;&#x5757; &#x4E4B;Alert">React Native API&#x6A21;&#x5757; &#x4E4B;Alert <a href="#t0React Native API&#x6A21;&#x5757; &#x4E4B;Alert"> # </a></h1>
+<h2 id="t1Alert">Alert <a href="#t1Alert"> # </a></h2>
+<p>(&#x4E00;)&#x6982;&#x8FF0;</p>
+<p>Android&#x3001;iOS&#x5E73;&#x53F0;&#x901A;&#x7528;&#x7684;&#x5F39;&#x51FA;&#x6846;Alert&#x6A21;&#x5757;</p>
+<p>&#x8BE5;Alert&#x6A21;&#x5757;&#x662F;&#x521B;&#x5EFA;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;&#x5F39;&#x6846;&#xFF0C;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6807;&#x9898;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5185;&#x5BB9;&#x3002;&#x8BE5;&#x5F39;&#x51FA;&#x6846;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x53EF;&#x9009;&#x6309;&#x94AE;&#xFF0C;&#x70B9;&#x51FB;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#x90FD;&#x4F1A;&#x8C03;&#x7528;onPress&#x65B9;&#x6CD5;&#x5E76;&#x4E14;&#x5173;&#x95ED;&#x5F39;&#x6846;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x53EA;&#x4F1A;&#x663E;&#x793A;&#x4E00;&#x4E2A;&apos;&#x786E;&#x5B9A;&apos;&#x6309;&#x94AE;&#x3002;</p>
+<p>&#x8BE5;&#x6A21;&#x5757;API&#x662F;&#x5728;Android&#x3001;iOS&#x5E73;&#x53F0;&#x901A;&#x7528;&#x7684;&#x663E;&#x793A;&#x9759;&#x6001;&#x7684;&#x5F39;&#x6846;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x63D0;&#x793A;&#x6846;&#x53EF;&#x4EE5;&#x8BA9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x7684;&#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x67E5;&#x770B;AlertIOS;&#x8BE5;&#x5E26;&#x8F93;&#x5165;&#x6846;&#x7684;&#x5F39;&#x6846;&#x53EA;&#x9002;&#x7528;&#x4E8E;iOS&#x5E73;&#x53F0;&#x3002;</p>
+<p>(&#x4E8C;)iOS&#x5E73;&#x53F0;&#x76F8;&#x5173;</p>
+<p>&#x53EA;&#x6709;iOS&#x5E73;&#x53F0;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x6570;&#x91CF;&#x7684;button,&#x6BCF;&#x4E2A;&#x6309;&#x94AE;&#x90FD;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x7279;&#x6B8A;&#x7684;&#x98CE;&#x683C;&#xFF0C;&#x4E0D;&#x8FC7;&#x98CE;&#x683C;&#x4E3A;&apos;default&apos;,&apos;cancel&apos;,&apos;destructive&apos;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x4E00;&#x3002;</p>
+<p>(&#x4E09;)Android&#x5E73;&#x53F0;&#x76F8;&#x5173;</p>
+<p>iOS&#x5E73;&#x53F0;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x6570;&#x91CF;&#x7684;button&#xFF0C;&#x4F46;&#x662F;&#x5728;Android&#x5E73;&#x53F0;&#x4E0A;&#x9762;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x6307;&#x5B9A;&#x4E09;&#x4E2A;&#x6309;&#x94AE;&#x3002;Android&#x5E73;&#x53F0;&#x7684;&#x5F39;&#x51FA;&#x6846;&#x7684;&#x6309;&#x94AE;&#x6709;&apos;&#x4E2D;&#x95F4;&#x6001;&apos;,&apos;&#x53D6;&#x6D88;&apos;,&apos;&#x786E;&#x8BA4;&apos;&#x4E09;&#x79CD;&#x72B6;&#x6001;</p>
+<p>1.&#x5982;&#x679C;&#x4F60;&#x53EA;&#x6709;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x4E3A;&apos;positive&apos; (&#x4F8B;&#x5982;:&#x786E;&#x5B9A;)</p>
+<p>2.&#x5982;&#x679C;&#x4F60;&#x6307;&#x5B9A;&#x4E86;&#x4E24;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x4F1A;&apos;negative&apos;,&apos;positive&apos; (&#x4F8B;&#x5982;:&#x786E;&#x5B9A;&#xFF0C;&#x53D6;&#x6D88;)</p>
+<p>3.&#x5982;&#x679C;&#x4F60;&#x6307;&#x5B9A;&#x4E86;&#x4E09;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x4F1A;&apos;neutral&apos;,&apos;negative&apos;,&apos;positive&apos;(&#x4F8B;&#x5982;:&#x7A0D;&#x540E;&#x518D;&#x8BF4;,&apos;&#x786E;&#x5B9A;&apos;,&apos;&#x53D6;&#x6D88;&apos;)</p>
+<p>(&#x56DB;)Alert&#x65B9;&#x6CD5;</p>
+<p>static alert(title:string,message?:string,buttons?:Buttons,type?:AlertType)  &#x8BE5;&#x4F1A;Alert&#x6A21;&#x5757;&#x663E;&#x793A;&#x5F39;&#x6846;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x6709;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x6807;&#x9898;&#xFF0C;&#x4FE1;&#x606F;&#xFF0C;&#x6309;&#x94AE;&#xFF0C;&#x4EE5;&#x53CA;&#x6309;&#x94AE;&#x7684;&#x98CE;&#x683C;&#x7C7B;&#x578B;</p>
+<p>(&#x4E94;)Alert&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;</p>
+<p>Alert&#x5B9E;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
+<pre><code>&apos;use strict&apos;;
+import React, {
+  AppRegistry,
+  Component,
+  StyleSheet,
+  Text,
+  View,
+  Alert,
+  ToastAndroid,
+  TouchableHighlight,
+} from &apos;react-native&apos;;
+class CustomButton extends React.Component {
+  render() {
+    return (
+      &lt;TouchableHighlight
+        style={styles.button}
+        underlayColor=&quot;#a5a5a5&quot;
+        onPress={this.props.onPress}&gt;
+        &lt;Text style={styles.buttonText}&gt;{this.props.text}&lt;/Text&gt;
+      &lt;/TouchableHighlight&gt;
+    );
+  }
+}
+class AlertDemo extends Component {
+  render() {
+    return (
+      &lt;View&gt;
+        &lt;Text style={{height:30,color:&apos;black&apos;,margin:8}}&gt;
+          &#x5F39;&#x51FA;&#x6846;&#x5B9E;&#x4F8B;
+        &lt;/Text&gt;
+        &lt;CustomButton text=&apos;&#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x9ED8;&#x8BA4;Alert&apos;
+          onPress={()=&gt;Alert.alert(&apos;&#x6E29;&#x99A8;&#x63D0;&#x9192;&apos;,&apos;&#x786E;&#x5B9A;&#x9000;&#x51FA;&#x5417;?&apos;)}
+          /&gt;
+        &lt;CustomButton text=&apos;&#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x4E24;&#x4E2A;&#x6309;&#x94AE;&#x7684;Alert&apos;
+          onPress={()=&gt;Alert.alert(&apos;&#x6E29;&#x99A8;&#x63D0;&#x9192;&apos;,&apos;&#x786E;&#x5B9A;&#x9000;&#x51FA;&#x5417;?&apos;,[
+            {text:&apos;&#x53D6;&#x6D88;&apos;,onPress:()=&gt;ToastAndroid.show(&apos;&#x4F60;&#x70B9;&#x51FB;&#x4E86;&#x53D6;&#x6D88;~&apos;,ToastAndroid.SHORT)},
+            {text:&apos;&#x786E;&#x5B9A;&apos;,onPress:()=&gt;ToastAndroid.show(&apos;&#x4F60;&#x70B9;&#x51FB;&#x4E86;&#x786E;&#x5B9A;~&apos;,ToastAndroid.SHORT)}
+            ])}
+          /&gt;
+        &lt;CustomButton text=&apos;&#x70B9;&#x51FB;&#x5F39;&#x51FA;&#x4E09;&#x4E2A;&#x6309;&#x94AE;&#x7684;Alert&apos;
+          onPress={()=&gt;Alert.alert(&apos;&#x6E29;&#x99A8;&#x63D0;&#x9192;&apos;,&apos;&#x786E;&#x5B9A;&#x9000;&#x51FA;&#x5417;?&apos;,[
+            {text:&apos;One&apos;,onPress:()=&gt;ToastAndroid.show(&apos;&#x4F60;&#x70B9;&#x51FB;&#x4E86;One~&apos;,ToastAndroid.SHORT)},
+            {text:&apos;Two&apos;,onPress:()=&gt;ToastAndroid.show(&apos;&#x4F60;&#x70B9;&#x51FB;&#x4E86;Two~&apos;,ToastAndroid.SHORT)},
+            {text:&apos;Three&apos;,onPress:()=&gt;ToastAndroid.show(&apos;&#x4F60;&#x70B9;&#x51FB;&#x4E86;Three~&apos;,ToastAndroid.SHORT)}
+            ])}
+          /&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+const styles = StyleSheet.create({
+  button: {
+    margin:5,
+    backgroundColor: &apos;white&apos;,
+    padding: 15,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: &apos;#cdcdcd&apos;,
+  }
+});
+
+AppRegistry.registerComponent(&apos;AlertDemo&apos;, () =&gt; AlertDemo);
+</code></pre><p>&#x8FD0;&#x884C;&#x622A;&#x56FE;&#x5982;&#x4E0B;:</p>
+<p><img src="../.././img/RN/Alert.gif" alt="Alert.gif"></p>
+<p>[&#x5168;&#x6587;&#x5B8C;]</p>
+
+        <div class="copyright">Created by <a href="https://github.com/shenbao" target="_blank">ShenBao</a></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

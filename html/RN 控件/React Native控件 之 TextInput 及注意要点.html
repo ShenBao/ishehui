@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISH</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                ISH
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>JS</a><ul><li><a href="../../html/JS/快速搞定常用的ES6新特性.html">快速搞定常用的ES6新特性</a></li><li><a href="../../html/JS/H5页面与Native的交互 封装使用.html">H5页面与Native的交互 封装使用</a></li></ul></li><li><a href="#"><span></span>React</a><ul><li><a href="../../html/React/React API 汇总.html">React API 汇总</a></li><li><a href="../../html/React/React中ES6与ES5构建差别及JSX的使用.html">React中ES6与ES5构建差别及JSX的使用</a></li><li><a href="../../html/React/React基础知识.html">React基础知识</a></li><li><a href="../../html/React/React编码规范.html">React编码规范</a></li><li><a href="../../html/React/webpack搭配react入门及实践.html">webpack搭配react入门及实践</a></li></ul></li><li><a href="#"><span></span>RN 基础</a><ul><li><a href="../../html/RN 基础/React Native 学习提纲.html">React Native 学习提纲</a></li><li><a href="../../html/RN 基础/React Native 常用第三方组件汇总.html">React Native 常用第三方组件汇总</a></li><li><a href="../../html/RN 基础/React Native 初探.html">React Native 初探</a></li><li><a href="../../html/RN 基础/React Native 命令汇总.html">React Native 命令汇总</a></li><li><a href="../../html/RN 基础/React Native 样式表指南.html">React Native 样式表指南</a></li><li><a href="../../html/RN 基础/React Native 布局之FlexBox.html">React Native 布局之FlexBox</a></li><li><a href="../../html/RN 基础/React Native 基础之Props(属性)与State(状态).html">React Native 基础之Props(属性)与State(状态)</a></li><li><a href="../../html/RN 基础/React Native 基础之核心组件使用教程介绍.html">React Native 基础之核心组件使用教程介绍</a></li><li><a href="../../html/RN 基础/React Native 开发之WebStorm开发工具设置代码智能提醒.html">React Native 开发之WebStorm开发工具设置代码智能提醒</a></li><li><a href="../../html/RN 基础/React Native特定平台代码说明.html">React Native特定平台代码说明</a></li></ul></li><li><a href="#"><span></span>RN API</a><ul><li><a href="../../html/RN API/React Native API模块 之 Alert .html">React Native API模块 之 Alert </a></li><li><a href="../../html/RN API/React Native API模块 之 Dimensions.html">React Native API模块 之 Dimensions</a></li><li><a href="../../html/RN API/React Native API模块 之 Keyboard.html">React Native API模块 之 Keyboard</a></li><li><a href="../../html/RN API/React Native API模块 之 StyleSheet.html">React Native API模块 之 StyleSheet</a></li><li><a href="../../html/RN API/React Native API模块 之 ToastAndroid.html">React Native API模块 之 ToastAndroid</a></li></ul></li><li><a href="#"><span></span>RN 控件</a><ul><li><a href="../../html/RN 控件/React Native控件 之 Text 及注意要点 .html">React Native控件 之 Text 及注意要点 </a></li><li class="active"><a href="../../html/RN 控件/React Native控件 之 TextInput 及注意要点.html">React Native控件 之 TextInput 及注意要点</a></li><li><a href="../../html/RN 控件/React Native控件 之 Touchable X 系列组件.html">React Native控件 之 Touchable X 系列组件</a></li><li><a href="../../html/RN 控件/React Native控件 之 Image 组件.html">React Native控件 之 Image 组件</a></li></ul></li><li><a href="#"><span></span>RN 工具</a><ul><li><a href="../../html/RN 工具/基于Fetch封装HTTPUtil工具类.html">基于Fetch封装HTTPUtil工具类</a></li></ul></li><li><a href="#"><span></span>开发</a><ul><li><a href="../../html/开发/RN版  bug反馈列表(rn 0.35).html">RN版  bug反馈列表(rn 0.35)</a></li><li><a href="../../html/开发/RN版  项目重构(基于RN 0.41.2).html">RN版  项目重构(基于RN 0.41.2)</a></li></ul></li><li><a href="#"><span></span>杂谈</a><ul><li><a href="../../html/杂谈/notpad++快捷键.html">notpad++快捷键</a></li><li><a href="../../html/杂谈/Facebook 开源的 Yarn 新型包管理工具.html">Facebook 开源的 Yarn 新型包管理工具</a></li></ul></li><li><a href="../../html/关于.html">关于</a></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0TextInput组件">TextInput组件</a><ul><li><a href="#t1前言">前言</a></li><li><a href="#t2实例">实例</a></li><li><a href="#t3属性方法">属性方法</a></li><li><a href="#t4TextInput实战-仿照QQ登录界面">TextInput实战-仿照QQ登录界面</a><ul><li><a href="#t5注意点：">注意点：</a></li></ul></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <p>&#xFEFF;</p>
+<h1 id="t0TextInput&#x7EC4;&#x4EF6;">TextInput&#x7EC4;&#x4EF6; <a href="#t0TextInput&#x7EC4;&#x4EF6;"> # </a></h1>
+<h2 id="t1&#x524D;&#x8A00;">&#x524D;&#x8A00; <a href="#t1&#x524D;&#x8A00;"> # </a></h2>
+<p>TextInput&#x7EC4;&#x4EF6;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x901A;&#x8FC7;&#x952E;&#x76D8;&#x8FDB;&#x884C;&#x8F93;&#x5165;&#x6587;&#x672C;&#x4FE1;&#x606F;&#x3002;&#x5E76;&#x4E14;&#x8BE5;&#x7EC4;&#x4EF6;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x914D;&#x7F6E;&#x5C5E;&#x6027;&#x4F8B;&#x5982;:&#x81EA;&#x52A8;&#x62FC;&#x5199;&#x4FEE;&#x590D;,&#x81EA;&#x52A8;&#x5927;&#x5C0F;&#x5199;&#x5207;&#x6362;,&#x5360;&#x4F4D;&#x9ED8;&#x8BA4;&#x5B57;&#x7B26;&#x8BBE;&#x7F6E;&#x4EE5;&#x53CA;&#x591A;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x952E;&#x76D8;&#x5207;&#x6362;&#x4F8B;&#x5982;:&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F39;&#x51FA;&#x6570;&#x5B57;&#x952E;&#x76D8;&#x3002;</p>
+<h2 id="t2&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B; <a href="#t2&#x5B9E;&#x4F8B;"> # </a></h2>
+<p>TextInput&#x7EC4;&#x4EF6;&#x548C;&#x524D;&#x9762;&#x8BB2;&#x7684;Image&#x6216;&#x8005;Text&#x7EC4;&#x4EF6;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x90FD;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;TextInput&#x7EC4;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x7ED9;&#x8BE5;&#x7EC4;&#x4EF6;&#x6DFB;&#x52A0;&#x76F8;&#x5173;&#x5C5E;&#x6027;(&#x4F8B;:&#x8FB9;&#x6846;&#x989C;&#x8272;,&#x7C97;&#x7EC6;,&#x80CC;&#x666F;,&#x9ED8;&#x8BA4;&#x503C;)&#x4EE5;&#x53CA;&#x76D1;&#x542C;&#x65B9;&#x6CD5;(&#x4F8B;&#x5982;:&#x8F93;&#x5165;&#x4FE1;&#x606F;,&#x7126;&#x70B9;&#x53D8;&#x5316;&#x7B49;&#x4E8B;&#x4EF6;)&#x3002;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x4F8B;&#x5B50;:</p>
+<pre><code>&lt;TextInput
+    style={{height: 40, borderColor: &apos;gray&apos;, borderWidth: 1}}
+    onChangeText={(text) =&gt; this.setState({text})}
+    value={this.state.text}
+  /&gt;
+</code></pre><p>&#x8BE5;&#x76F4;&#x63A5;&#x5B9A;&#x4E49;&#x4E86;TextInput&#x7EC4;&#x4EF6;&#xFF0C;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x7EC4;&#x4EF6;&#x7684;&#x98CE;&#x683C;,&#x9AD8;&#x5EA6;,&#x8FB9;&#x6846;&#x7C97;&#x7EC6;&#x4EE5;&#x53CA;&#x8FB9;&#x6846;&#x989C;&#x8272;&#x3002;&#x5E76;&#x4E14;&#x6211;&#x4EEC;&#x8FD9;&#x8FB9;&#x76D1;&#x542C;&#x4E86;TextInput&#x7684;onChangeText&#x7684;&#x4E8B;&#x4EF6;&#x6765;&#x8FDB;&#x884C;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x4FE1;&#x606F;&#x3002;&#x9664;&#x4E86;&#x8BE5;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#x65B9;&#x6CD5;&#x4EE5;&#x5916;&#x8FD8;&#x6709;onSubmitEditing(&#x63D0;&#x4EA4;&#x7F16;&#x8F91;)&#x4EE5;&#x53CA;onFoucs(&#x8F93;&#x5165;&#x6846;&#x83B7;&#x53D6;&#x7126;&#x70B9;&#x7684;&#x65F6;&#x5019;&#x8C03;&#x7528;)&#x7B49;&#x76F8;&#x5173;&#x7684;&#x76D1;&#x542C;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x5728;&#x6F14;&#x793A;&#x53E6;&#x5916;&#x4E00;&#x4E2A;TextInput&#x5B9E;&#x4F8B;&#xFF0C;&#x8BE5;&#x521B;&#x5EFA;&#x4E86;&#x4E09;&#x4E2A;TextInput&#xFF0C;&#x540C;&#x65F6;&#x6BCF;&#x4E2A;TextInput&#x90FD;&#x6DFB;&#x52A0;&#x4E86;&#x9ED8;&#x8BA4;&#x4FE1;&#x606F;(hit)&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;TextInput&#x7EC4;&#x4EF6;&#x8BBE;&#x7F6E;&#x9AD8;&#x5EA6;40,&#x8FB9;&#x6846;&#x7C97;&#x7EC6;&#x548C;&#x8FB9;&#x6846;&#x7684;&#x989C;&#x8272;&#xFF0C;&#x5207;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x591A;&#x884C;&#x4FE1;&#x606F;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;TextInput&#x8BBE;&#x7F6E;&#x5DE6;&#x53F3;&#x989D;&#x8FB9;&#x8DDD;&#x4EE5;&#x53CA;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x5230;&#x7126;&#x70B9;&#x3002;&#x7B2C;&#x4E09;&#x4E2A;TextInput&#x8BBE;&#x7F6E;&#x4E0D;&#x53EF;&#x7F16;&#x8F91;&#x72B6;&#x6001;&#x3002;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
+<pre><code>&lt;View style={styles.container}&gt;
+       &lt;Text style={styles.welcome}&gt;
+         Welcome to React Native!
+       &lt;/Text&gt;
+        &lt;TextInput style={{height:40,borderColor:&apos;red&apos;,borderWidth:1}}
+         multiline={true}
+         defaultValue=&apos;&#x9ED8;&#x8BA4;&#x4FE1;&#x606F;1&apos;
+        /&gt;
+       &lt;TextInput 
+           style={{marginLeft:10,marginRight:10}}
+           autoFocus={true}
+           defaultValue=&apos;&#x9ED8;&#x8BA4;&#x4FE1;&#x606F;2&apos;/&gt;
+       &lt;TextInput 
+           editable={false}
+           defaultValue=&apos;&#x9ED8;&#x8BA4;&#x4FE1;&#x606F;3&apos;/&gt;
+&lt;/View&gt;
+</code></pre><h2 id="t3&#x5C5E;&#x6027;&#x65B9;&#x6CD5;">&#x5C5E;&#x6027;&#x65B9;&#x6CD5; <a href="#t3&#x5C5E;&#x6027;&#x65B9;&#x6CD5;"> # </a></h2>
+<p>&#x8FD9;&#x91CC;&#x6C47;&#x805A;&#x5E73;&#x53F0;&#x516C;&#x7528;&#x4EE5;&#x53CA;Android&#x751F;&#x6548;&#x7684;&#x5C5E;&#x6027;&#x65B9;&#x6CD5;</p>
+<p>1.View &#x652F;&#x6301;View&#x7684;&#x76F8;&#x5173;&#x5C5E;&#x6027;</p>
+<p>2.autoCapitalize  &#x63A7;&#x5236;TextInput&#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x8FDB;&#x884C;&#x5207;&#x6362;&#x6210;&#x5927;&#x5199;(&#x53EF;&#x9009;&#x62E9;&#x53C2;&#x6570;:&apos;none&apos;, &apos;sentences&apos;, &apos;words&apos;, &apos;characters&apos;)</p>
+<ul>
+<li>none:&#x4E0D;&#x81EA;&#x52A8;&#x5207;&#x6362;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#x6210;&#x5927;&#x5199;</li>
+<li>sentences:&#x9ED8;&#x8BA4;&#x6BCF;&#x4E2A;&#x53E5;&#x5B50;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x53D8;&#x6210;&#x5927;&#x5199;</li>
+<li>words:&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x53D8;&#x6210;&#x5927;&#x5199;</li>
+<li>characters:&#x6BCF;&#x4E2A;&#x5B57;&#x6BCD;&#x5168;&#x90E8;&#x53D8;&#x6210;&#x5927;&#x5199;</li>
+</ul>
+<p>3.autoCorrect  bool  &#x8BBE;&#x7F6E;&#x62FC;&#x5199;&#x81EA;&#x52A8;&#x4FEE;&#x6B63;&#x529F;&#x80FD; &#x9ED8;&#x8BA4;&#x4E3A;&#x5F00;&#x542F;(true)</p>
+<p>4.autoFocus bool  &#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x9ED8;&#x8BA4;&#x83B7;&#x53D6;&#x5230;&#x7126;&#x70B9;&#x9ED8;&#x8BA4;&#x4E3A;&#x5173;&#x95ED;(false)&#x3002;&#x8BE5;&#x9700;&#x8981;componentDidMount&#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x4E4B;&#x540E;&#x624D;&#x4F1A;&#x83B7;&#x53D6;&#x7126;&#x70B9;&#x54E6;(componentDidMount&#x662F;React&#x7EC4;&#x4EF6;&#x88AB;&#x6E32;&#x67D3;&#x4E4B;&#x540E;React&#x4E3B;&#x52A8;&#x56DE;&#x8C03;&#x7684;&#x65B9;&#x6CD5;)</p>
+<p>5.defaultValue  string &#x7ED9;&#x6587;&#x672C;&#x8F93;&#x5165;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x521D;&#x59CB;&#x503C;&#x3002;</p>
+<p>6.editable bool  &#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x6846;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x7F16;&#x8F91; &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;true,&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7F16;&#x8F91;</p>
+<p>7.keyboardType  &#x952E;&#x76D8;&#x7C7B;&#x578B;(&#x53EF;&#x9009;&#x53C2;&#x6570;:&quot;default&quot;, &apos;email-address&apos;, &apos;numeric&apos;, &apos;phone-pad&apos;, &quot;ascii-capable&quot;, &apos;numbers-and-punctuation&apos;, &apos;url&apos;, &apos;number-pad&apos;, &apos;name-phone-pad&apos;, &apos;decimal-pad&apos;, &apos;twitter&apos;, &apos;web-search&apos;) &#x8BE5;&#x7528;&#x6765;&#x9009;&#x62E9;&#x9ED8;&#x8BA4;&#x5F39;&#x51FA;&#x952E;&#x76D8;&#x7684;&#x7C7B;&#x578B;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x751A;&#x81F3;numeric&#x5C31;&#x662F;&#x5F39;&#x51FA;&#x6570;&#x5B57;&#x952E;&#x76D8;&#x3002;&#x9274;&#x4E8E;&#x5E73;&#x53F0;&#x7684;&#x539F;&#x56E0;&#x5982;&#x4E0B;&#x7684;&#x503C;&#x662F;&#x6240;&#x6709;&#x5E73;&#x53F0;&#x90FD;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x901A;&#x7528;&#x7684;</p>
+<ul>
+<li>default</li>
+<li>numeric            &#x6570;&#x5B57;&#x952E;&#x76D8;</li>
+<li>email-address  &#x90AE;&#x7BB1;&#x5730;&#x5740;</li>
+</ul>
+<p>8.maxLength  number  &#x53EF;&#x4EE5;&#x9650;&#x5236;&#x6587;&#x672C;&#x8F93;&#x5165;&#x6846;&#x6700;&#x5927;&#x7684;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#x957F;&#x5EA6;</p>
+<p>9.multiline bool  &#x8BBE;&#x7F6E;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x591A;&#x884C;&#x6587;&#x5B57;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false(&#x8868;&#x793A;&#x65E0;&#x8BBA;&#x6587;&#x672C;&#x8F93;&#x5165;&#x591A;&#x5C11;&#xFF0C;&#x90FD;&#x662F;&#x5355;&#x884C;&#x663E;&#x793A;)</p>
+<p>10.onBlur  function &#x76D1;&#x542C;&#x65B9;&#x6CD5;&#xFF0C;&#x6587;&#x672C;&#x6846;&#x5931;&#x53BB;&#x7126;&#x70B9;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;</p>
+<p>11.onChange function &#x76D1;&#x542C;&#x65B9;&#x6CD5;,&#x6587;&#x672C;&#x6846;&#x5185;&#x5BB9;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;</p>
+<p>12.onChangeText  function&#x76D1;&#x542C;&#x65B9;&#x6CD5;&#xFF0C;&#x6587;&#x672C;&#x6846;&#x5185;&#x5BB9;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x8FDB;&#x884C;&#x4F20;&#x9012;&#x6587;&#x672C;&#x5185;&#x5BB9;</p>
+<p>13.onEndEditing  function&#x76D1;&#x542C;&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x6587;&#x672C;&#x7ED3;&#x675F;&#x6587;&#x672C;&#x8F93;&#x5165;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;</p>
+<p>14.onFocus  function &#x76D1;&#x542C;&#x65B9;&#x6CD5;  &#x6587;&#x672C;&#x6846;&#x83B7;&#x53D6;&#x5230;&#x7126;&#x70B9;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;</p>
+<p>15.onLayout  function&#x76D1;&#x542C;&#x65B9;&#x6CD5;  &#x7EC4;&#x4EF7;&#x5E03;&#x5C40;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#x8C03;&#x7528;&#xFF0C;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x4E3A; {x,y,width,height}</p>
+<p>16.onSubmitEditing function&#x76D1;&#x542C;&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x7F16;&#x8F91;&#x63D0;&#x4EA4;&#x7684;&#x65F6;&#x5019;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#x3002;&#x4E0D;&#x8FC7;&#x5982;&#x679C;multiline={true}&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x5C31;&#x4E0D;&#x751F;&#x6548;</p>
+<p>17.placeholder string &#x5F53;&#x6587;&#x672C;&#x8F93;&#x5165;&#x6846;&#x8FD8;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8F93;&#x5165;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x4FE1;&#x606F;&#xFF0C;&#x5F53;&#x6709;&#x8F93;&#x5165;&#x7684;&#x65F6;&#x5019;&#x8BE5;&#x503C;&#x4F1A;&#x88AB;&#x6E05;&#x9664;</p>
+<p>18.placeholderText Color  string &#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x4FE1;&#x606F;&#x989C;&#x8272;(placeholder)</p>
+<p>19.secureTextEntry  bool &#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x4E3A;&#x5BC6;&#x7801;&#x5B89;&#x5168;&#x8F93;&#x5165;&#x6846; &#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false</p>
+<p>20.selectTextOnFocus bool &#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x5F53;&#x83B7;&#x5F97;&#x7126;&#x70B9;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6587;&#x5B57;&#x90FD;&#x4F1A;&#x88AB;&#x9009;&#x4E2D;&#x3002;</p>
+<p>21.selectionColor string &#x8BBE;&#x7F6E;&#x8F93;&#x5165;&#x6846;&#x9AD8;&#x4EAE;&#x65F6;&#x7684;&#x989C;&#x8272;&#xFF08;&#x5728;iOS&#x4E0A;&#x8FD8;&#x5305;&#x62EC;&#x5149;&#x6807;&#xFF09;</p>
+<p>22.style &#x98CE;&#x683C;&#x5C5E;&#x6027;  &#x53EF;&#x4EE5;&#x53C2;&#x8003;Text&#x7EC4;&#x4EF6;&#x98CE;&#x683C;</p>
+<p>23.value  string &#x8F93;&#x5165;&#x6846;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x503C;</p>
+<p>====&#x534E;&#x4E3D;&#x4E3D;&#x7684;&#x5206;&#x754C;&#x7EBF;=============&#x4EE5;&#x4E0A;&#x662F;&#x4E00;&#x4E9B;Android&#xFF0C;iOS&#x5E73;&#x53F0;&#x901A;&#x7528;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4E0B;&#x9762;&#x6839;&#x636E;&#x5B98;&#x7F51;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x9002;&#x7528;&#x4E8E;Android\IOS&#x5E73;&#x53F0;&#x7684;&#x5C5E;&#x6027;&#x65B9;&#x6CD5;=================</p>
+<p>Android</p>
+<p>24.numberOfLines number&#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x8F93;&#x5165;&#x6846;&#x884C;&#x6570;&#xFF0C;&#x8BE5;&#x9700;&#x8981;&#x9996;&#x5148;&#x8BBE;&#x7F6E;multiline&#x4E3A;true,&#x8BBE;&#x7F6E;TextInput&#x4E3A;&#x591A;&#x884C;&#x6587;&#x672C;&#x3002;</p>
+<p>25.textAlign &#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x6A2A;&#x5411;&#x5E03;&#x5C40;&#x65B9;&#x5F0F; &#x53EF;&#x9009;&#x53C2;&#x6570;(&apos;start&apos;, &apos;center&apos;, &apos;end&apos;)</p>
+<p>26.textAlignVertical &#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x5E03;&#x5C40;&#x65B9;&#x5F0F; &#x53EF;&#x9009;&#x53C2;&#x6570;(&apos;top&apos;, &apos;center&apos;, &apos;bottom&apos;)</p>
+<p>27.underlineColorAndroid  &#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x8F93;&#x5165;&#x6846;&#x4E0B;&#x5212;&#x7EBF;&#x7684;&#x989C;&#x8272;</p>
+<p>ios   </p>
+<p>28.clearButtonMode enum(&apos;never&apos;, &apos;while-editing&apos;, &apos;unless-editing&apos;, &apos;always&apos;) &#x662F;&#x5426;&#x8981;&#x5728;&#x6587;&#x672C;&#x6846;&#x53F3;&#x4FA7;&#x663E;&#x793A;&#x201C;&#x6E05;&#x9664;&#x201D;&#x6309;&#x94AE;&#x3002;</p>
+<p>29.clearTextOnFocus bool &#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x6BCF;&#x6B21;&#x5F00;&#x59CB;&#x8F93;&#x5165;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x6E05;&#x9664;&#x6587;&#x672C;&#x6846;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>30.enablesReturnKeyAutomatically bool &#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x952E;&#x76D8;&#x4F1A;&#x5728;&#x6587;&#x672C;&#x6846;&#x5185;&#x6CA1;&#x6709;&#x6587;&#x5B57;&#x7684;&#x65F6;&#x5019;&#x7981;&#x7528;&#x786E;&#x8BA4;&#x6309;&#x94AE;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;false&#x3002;</p>
+<p>31.keyboardAppearance enum(&apos;default&apos;, &apos;light&apos;, &apos;dark&apos;) &#x6307;&#x5B9A;&#x952E;&#x76D8;&#x7684;&#x989C;&#x8272;&#x3002;</p>
+<p>32.onKeyPress function &#x5F53;&#x4E00;&#x4E2A;&#x952E;&#x88AB;&#x6309;&#x4E0B;&#x7684;&#x65F6;&#x5019;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x3002;&#x88AB;&#x6309;&#x4E0B;&#x7684;&#x952E;&#x4F1A;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x4F1A;&#x5728;onChange&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x3002;</p>
+<p>33.returnKeyType enum(&apos;default&apos;, &apos;go&apos;, &apos;google&apos;, &apos;join&apos;, &apos;next&apos;, &apos;route&apos;, &apos;search&apos;, &apos;send&apos;, &apos;yahoo&apos;, &apos;done&apos;, &apos;emergency-call&apos;)&#x51B3;&#x5B9A;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>34.selectionState DocumentSelectionState &#x53C2;&#x89C1;DocumentSelectionState.js&#xFF0C;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x4E2D;&#x54EA;&#x6BB5;&#x6587;&#x5B57;&#x88AB;&#x9009;&#x4E2D;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<h2 id="t4TextInput&#x5B9E;&#x6218;-&#x4EFF;&#x7167;QQ&#x767B;&#x5F55;&#x754C;&#x9762;">TextInput&#x5B9E;&#x6218;-&#x4EFF;&#x7167;QQ&#x767B;&#x5F55;&#x754C;&#x9762; <a href="#t4TextInput&#x5B9E;&#x6218;-&#x4EFF;&#x7167;QQ&#x767B;&#x5F55;&#x754C;&#x9762;"> # </a></h2>
+<pre><code>/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ */
+&apos;use strict&apos;;
+import React, { Component } from &apos;react&apos;;
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  Image,
+  View,
+  TextInput,
+} from &apos;react-native&apos;;
+
+class TestInput extends Component {
+  render() {
+    return (
+      &lt;View style={{backgroundColor:&apos;#f4f4f4&apos;,flex:1}}&gt;
+          &lt;Image
+              style={styles.style_image} 
+              source={require(&apos;./img/app_icon.png&apos;)}/&gt;
+          &lt;TextInput 
+              style={styles.style_user_input}
+              placeholder=&apos;QQ&#x53F7;/&#x624B;&#x673A;&#x53F7;/&#x90AE;&#x7BB1;&apos;
+              numberOfLines={1}
+              autoFocus={true}
+              underlineColorAndroid={&apos;transparent&apos;} 
+              textAlign=&apos;center&apos;
+          /&gt;
+          &lt;View
+              style={{height:1,backgroundColor:&apos;#f4f4f4&apos;}}
+          /&gt;
+          &lt;TextInput 
+              style={styles.style_pwd_input}
+              placeholder=&apos;&#x5BC6;&#x7801;&apos;
+              numberOfLines={1}
+              underlineColorAndroid={&apos;transparent&apos;} 
+              secureTextEntry={true}
+              textAlign=&apos;center&apos;
+          /&gt;
+          &lt;View 
+              style={styles.style_view_commit}
+           &gt;
+            &lt;Text style={{color:&apos;#fff&apos;}}&gt;
+               &#x767B;&#x5F55;
+            &lt;/Text&gt;
+
+          &lt;/View&gt;
+
+          &lt;View style={{flex:1,flexDirection:&apos;row&apos;,alignItems: &apos;flex-end&apos;,bottom:10}}&gt;
+             &lt;Text style={styles.style_view_unlogin}&gt;
+                 &#x65E0;&#x6CD5;&#x767B;&#x5F55;?
+            &lt;/Text&gt;
+            &lt;Text style={styles.style_view_register}&gt;
+                 &#x65B0;&#x7528;&#x6237;
+            &lt;/Text&gt;
+          &lt;/View&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+const styles = StyleSheet.create({
+  style_image:{
+    borderRadius:35,
+    height:70,
+    width:70,
+    marginTop:40,
+    alignSelf:&apos;center&apos;,
+  },
+  style_user_input:{  
+      backgroundColor:&apos;#fff&apos;,
+      marginTop:10,
+      height:35,
+  },
+   style_pwd_input:{  
+      backgroundColor:&apos;#fff&apos;,
+      height:35,
+  },
+   style_view_commit:{  
+      marginTop:15,
+      marginLeft:10,
+      marginRight:10,
+      backgroundColor:&apos;#63B8FF&apos;,
+      height:35,
+      borderRadius:5,
+      justifyContent: &apos;center&apos;,
+      alignItems: &apos;center&apos;,
+  },
+  style_view_unlogin:{
+    fontSize:12,
+    color:&apos;#63B8FF&apos;,
+    marginLeft:10,
+  },
+  style_view_register:{
+    fontSize:12,
+    color:&apos;#63B8FF&apos;,
+    marginRight:10,
+    alignItems:&apos;flex-end&apos;,
+    flex:1,
+    flexDirection:&apos;row&apos;,
+    textAlign:&apos;right&apos;,
+  }
+});
+
+AppRegistry.registerComponent(&apos;TestInput&apos;, () =&gt; TestInput);
+</code></pre><h3 id="t5&#x6CE8;&#x610F;&#x70B9;&#xFF1A;">&#x6CE8;&#x610F;&#x70B9;&#xFF1A; <a href="#t5&#x6CE8;&#x610F;&#x70B9;&#xFF1A;"> # </a></h3>
+<p>1&#x3001;&#x5728;&#x4F7F;&#x7528;TextInput&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5728;Android&#x5E73;&#x53F0;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x6846;&#x4E0B;&#x6709;&#x4E2A;&#x6A2A;&#x7EBF;&#xFF0C;&#x6B64;&#x65F6;&#x9700;&#x8981;&#x5C06;&#x5C5E;&#x6027;underlineColorAndroid  &#x8BBE;&#x7F6E;&#x4E3A;transparent&#x6765;&#x89E3;&#x51B3;&#x3002;</p>
+<p>2&#x3001;&#x5E38;&#x7528;&#x7684;TextInput&#x662F;&#x4F5C;&#x4E3A;&#x6587;&#x672C;&#x57DF;&#xFF0C;&#x8B6C;&#x5982;&#x6700;&#x591A;&#x8F93;&#x5165;50&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x6B64;&#x65F6;&#x9700;&#x8981;&#x8BBE;&#x7F6E;   multiline ={true}  maxLength ={50}</p>
+<p>[&#x5168;&#x6587;&#x5B8C;]</p>
+
+        <div class="copyright">Created by <a href="https://github.com/shenbao" target="_blank">ShenBao</a></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
