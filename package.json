@@ -55,10 +55,10 @@
                 ]
             },
             {
-                "RN 组件": [
-                    "RN组件 之 Text 及注意要点 .md",
-                    "RN组件 之 TextInput 及注意要点.md",
-                    "React Native控件之Touchable X 系列组件.md"
+                "RN 控件": [
+                    "React Native控件 之 Text 及注意要点 .md",
+                    "React Native控件 之 TextInput 及注意要点.md",
+                    "React Native控件 之 Touchable X 系列组件.md"
                 ]
             },
             {
