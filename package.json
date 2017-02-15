@@ -28,7 +28,8 @@
                     "React中ES6与ES5构建差别及JSX的使用.md",
                     "React基础知识.md",
                     "React编码规范.md",
-                    "webpack搭配react入门及实践.md"
+                    "webpack搭配react入门及实践.md",
+                    "Babel使用指南.md"
                 ]
             },
             {
