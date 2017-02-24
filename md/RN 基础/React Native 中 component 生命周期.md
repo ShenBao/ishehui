@@ -54,7 +54,7 @@ void componentDidMount()
 
 ## shouldComponentUpdate
 
-```react native
+```
 boolean shouldComponentUpdate(
   object nextProps, object nextState
 )
@@ -62,7 +62,7 @@ boolean shouldComponentUpdate(
 
 这个方法在初始化render时不会执行，当props或者state发生变化时执行，并且是在render之前，当新的props或者state不需要更新组件时，返回false
 
-```react native
+```
 shouldComponentUpdate: function(nextProps, nextState) {
   return nextProps.id !== this.props.id;
 }
@@ -75,7 +75,7 @@ shouldComponentUpdate: function(nextProps, nextState) {
 
 ## componentWillUpdate
 
-```react native
+```
 void componentWillUpdate(
   object nextProps, object nextState
 )
@@ -85,7 +85,7 @@ void componentWillUpdate(
 
 ## componentDidUpdate
 
-```react native
+```
 void componentDidUpdate(
   object prevProps, object prevState
 )
@@ -96,7 +96,7 @@ void componentDidUpdate(
 
 ## componentWillReceiveProps
 
-```react native
+```
 void componentWillReceiveProps(
   object nextProps
 )
@@ -104,7 +104,7 @@ void componentWillReceiveProps(
 
 当props发生变化时执行，初始化render时不执行，在这个回调函数里面，你可以根据属性的变化，通过调用this.setState()来更新你的组件状态，旧的属性还是可以通过this.props来获取,这里调用更新状态是安全的，并不会触发额外的render调用
 
-```react native
+```
 componentWillReceiveProps: function(nextProps) {
   this.setState({
     likesIncreasing: nextProps.likeCount > this.props.likeCount
